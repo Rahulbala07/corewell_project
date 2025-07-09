@@ -1,0 +1,148 @@
+.footer {
+	background: #f9f9f9;
+	padding: 3rem 1rem;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.footer-section {
+	flex: 1 1 200px;
+	margin: 1rem;
+	min-width: 200px;
+}
+
+.footer-logo {
+	width: 120px;
+	margin-bottom: 1rem;
+}
+
+.footer-section p {
+	color: #5a5a5a;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.footer-section h3 {
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 1rem;
+	color: #101010;
+}
+
+.footer-section ul {
+	padding: 0;
+	list-style: none;
+}
+
+.footer-section ul li a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+	color: #4dbbff;
+}
+
+.footer-socials a {
+	display: inline-block;
+	background: #f1f1f1;
+	border-radius: 50%;
+	padding: 0.6rem;
+	margin-right: 0.5rem;
+	color: #444;
+	transition: all 0.3s ease;
+	font-size: 14px;
+}
+
+.footer-socials a:hover {
+	background: #299ee7;
+	color: white;
+    cursor: pointer;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 14px;
+  margin-top: 10px;
+  /* border-radius: 10px; */
+  font-weight: 600;
+  border-radius: 30px;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+  border: none;
+
+  background: linear-gradient(to right, #01d073, #0493ec);
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.text-wrapper {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  display:flex;
+    align-items: center;
+  width: 0;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.4s ease;
+  /* color:black; */
+  background: #242424;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.arrow.after {
+  width: auto;
+  opacity: 1;
+  transform: translateX(0);
+  margin-left: 6px;
+}
+
+.contact-btn:hover .arrow.after {
+  opacity: 0;
+  width: 0;
+  transform: translateX(40px);
+  margin-left: 0;
+}
+
+.contact-btn:hover .arrow.before {
+  opacity: 1;
+  width: auto;
+  transform: translateX(0px);
+  margin-right: 6px;
+}
+.footer-text{
+    text-align: center;
+    color: #c5c4c4;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+	.footer-container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
