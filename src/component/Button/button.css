@@ -18,10 +18,10 @@
 	border-radius: 0;
 }
 .submit_bt, .submit_bt_mobile {
-  background: linear-gradient(to right, #01d073, #0493ec) !important; /* Stronger green to blue */
+  background: linear-gradient(to right, #4dbbff, #6cff5f)!important; /* Stronger green to blue */
   color: white;
   font-weight: 600;
-  padding: 1rem 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 5px;
   font-size: 10px;
   border: none;

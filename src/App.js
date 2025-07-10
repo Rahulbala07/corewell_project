@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./component/Header/Header";
 import Footer from "./component/Footer/Footer";
 import Home from "./pages/Home/Home";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 function App() {
+		useEffect(() => {
+		AOS.init({
+			duration: 1500, 
+			offset: 100,
+		});
+	}, []);
   return (
     <BrowserRouter>
 			<Routes>
