@@ -22,9 +22,9 @@ function Header() {
 		<div className="parent_head">
 			<header className="parent_header mx-auto container-xxl">
 				<div className="brand">
-					<img src='/logo.jpeg' alt="Brand Logo" style={{width:"60px",height:"50px"}} />
+					<img src='/logo.png' alt="Brand Logo" style={{width:"60px",height:"50px"}} />
                     <div className="brand_name">
-                        <img src="/name.jpeg" alt="Brand Name" style={{width:"150px",height:"30px"}} />
+                        <img src="/name.png" alt="Brand Name" style={{width:"150px",height:"30px"}} />
                     </div>
 				</div>
 				<div>

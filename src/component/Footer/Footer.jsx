@@ -9,7 +9,7 @@ function Footer() {
 		<footer className="footer">
 			<div className="footer-container">
 				<div className="footer-section about">
-					<img src="/logo.jpeg" alt="Focus Logo" className="footer-logo" />
+					<img src="/logo.png" alt="Focus Logo" className="footer-logo" />
 					<p>
 						We are counted as building a platform where people can explore exciting and lucrative careers. 
 						We focus on bringing out the best in individuals by helping students excel in their professional skills.
