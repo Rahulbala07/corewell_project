@@ -6,7 +6,7 @@ import "./choose.css";
 const stats = [
   { label: "Certified Students", value: 10000, suffix: "+" },
   { label: "Courses Completed", value: 500, suffix: "+" },
-  { label: "Placement Rate", value: 97, suffix: "%" },
+  { label: "Placement Rate", value: 100, suffix: "%" },
   { label: "Expert Mentors", value: 25, suffix: "+" },
 ];
 
@@ -32,9 +32,9 @@ function WhyChooseUs() {
           <ul>
             <li>Globally Recognized Certification Programs</li>
             <li>Live Mentorship from Certified Coders</li>
-            <li>97% Placement Support Rate</li>
+            <li>100% Placement Support Rate</li>
             <li>Hands-on, Practical Medical Coding Training</li>
-            <li>Online & Offline Learning Options</li>
+            <li>Online Learning Training</li>
           </ul>
         </div>
       </div>

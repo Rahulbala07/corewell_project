@@ -27,8 +27,11 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-   
 
+}
+
+.brand_name{
+	align-self: center;
 }
 
 a {
@@ -42,11 +45,11 @@ a {
 
 .brand {
 	display: flex;
-    
 	flex-direction: row;
 	line-height: 12px;
 	padding-bottom: 0.8rem;
     margin-top: 1rem;
+	gap: 0.5rem;
 }
 
 .brand h1 {

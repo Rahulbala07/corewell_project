@@ -1,15 +1,18 @@
-.parent-home{
-    
-}
+/*.parent-home{
+  
+}*/
 .hero-container {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 100%;
+  padding: 2rem;
    display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at top left, #def4f9, #c1e7ef 80%, #ffffff);
+  background-image: url('E:\Arsh_Info_Tech\corewell_project\corewell_project\public\home-background-img .jpg');
   justify-content: center;
   align-items: center;
+  background-size: cover;
+   
   
 }
 
