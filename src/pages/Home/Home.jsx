@@ -2,6 +2,7 @@ import React from 'react';
 import './home.css';
 import { FaPlay } from 'react-icons/fa6';
 import WhyChooseUs from '../../component/Choose/Choose';
+import Slider from '../../component/Slider/Slider';
 
 function Home() {
   return (
@@ -33,6 +34,9 @@ function Home() {
           <button className="download-btn">Download Brochure</button>
         </div>
       </div>
+    
+        <Slider/>
+      
       <div className="hero-image" data-aos="fade-left" data-aos-duration="2000">
       <WhyChooseUs/>
       </div>
