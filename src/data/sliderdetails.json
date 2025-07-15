@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Our Courses",
+    "description": "Deep dive into our wide range of professional courses tailored to help you grow."
+  },
+  {
+    "id": 2,
+    "title": "Expert Instructors",
+    "description": "Our instructors are highly qualified experts in their respective fields."
+  },
+  {
+    "id": 3,
+    "title": "Flexible Learning",
+    "description": "Learn at your own pace with our flexible learning schedule."
+  },
+  {
+    "id": 4,
+    "title": "Certification",
+    "description": "Get certified after completing each course to boost your career profile."
+  },
+  {
+    "id": 5,
+    "title": "Community",
+    "description": "Join our vibrant community and collaborate with learners from all over the world."
+  }
+]

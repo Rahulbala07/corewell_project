@@ -8,6 +8,7 @@ import './App.css';
 
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import DetailsPage from './pages/Coursedetail/Coursedetail';
 
 function App() {
 		useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
 							<Header />
 							<Routes>
 								<Route path="/" element={<Home />} />
+								<Route path="/detail/:id" element={<DetailsPage/>} />
 								{/* <Route path="/about" element={<About_Page />} />
 								<Route path="/properties" element={<Properties />} />
 								<Route path="/agent" element={<Agent />} />

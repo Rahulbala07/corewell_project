@@ -14,6 +14,92 @@
 	/* width: 100%; */
 	z-index: 1000;
 }
+/* Parent <li> dropdown container */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #242424;
+  font-weight: 600;
+  font-size: 13px;
+  /* letter-spacing: 2px; */
+  transition: color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  color: #4dbbff;
+}
+
+/* Arrow icon */
+.arrow-icon {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow on hover */
+.dropdown:hover .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column !important;
+  gap:10px !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(-10px); */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  
+}
+
+.dropdown-menu a {
+  color: #222;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0px !important;
+  display: block;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background: #f2f9ff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.arrow-icon {
+display: inline-block;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow on hover of parent .dropdown */
+.dropdown:hover .arrow-icon {
+  transform: rotate(270deg);
+}
 
 
 @media (min-width: 901px) {

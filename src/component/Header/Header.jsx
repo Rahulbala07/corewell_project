@@ -44,11 +44,17 @@ function Header() {
 								COURSES
 							</NavLink>
 						</li>
-						<li>
-							<NavLink to="/agent" activeClassName="active">
-								ADMISSION
-							</NavLink>
-						</li>
+						<li className="dropdown">
+  <span className="dropdown-toggle">
+    ADMISSION <i className="arrow-icon fa-solid fa-chevron-down"></i>
+  </span>
+  <ul className="dropdown-menu">
+    <li><NavLink to="/admission/process">How do Join</NavLink></li>
+    <li><NavLink to="/admission/eligibility">Enroll now</NavLink></li>
+    <li><NavLink to="/admission/fees">Refer a Friend</NavLink></li>
+  </ul>
+</li>
+
 						<li>
 							<NavLink to="/contact" activeClassName="active">
 								CAREER
