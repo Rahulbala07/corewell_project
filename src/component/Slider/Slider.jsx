@@ -25,20 +25,6 @@ function Slider() {
       content: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       bgColor: "#FFFFFF",
       image: "https://campustechnology.com/-/media/EDU/CampusTechnology/2019-Images/20191209online.jpg"
-    },
-    {
-      id: 4,
-      title: "Certification",
-      content: "It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-      bgColor: "#FFFFFF",
-      image: "https://campustechnology.com/-/media/EDU/CampusTechnology/2019-Images/20191209online.jpg"
-    },
-    {
-      id: 5,
-      title: "Community",
-      content: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.",
-      bgColor: "#FFFFFF",
-      image: "https://campustechnology.com/-/media/EDU/CampusTechnology/2019-Images/20191209online.jpg"
     }
   ];
    const navigate = useNavigate();
@@ -206,7 +192,7 @@ function Slider() {
       if (!isTransitioning) {
         nextSlide();
       }
-    }, 8000); // Change slide every 5 seconds
+    }, 1000);
 
     return () => clearInterval(autoPlayInterval);
   }, [nextSlide, isTransitioning]);
@@ -225,9 +211,6 @@ function Slider() {
       </div>
 
       <div className="slider-wrapper">
-        <div className="nav-button prev-button" onClick={prevSlide}>
-          <span><i class="fas fa-arrow-left"></i></span>
-        </div>
 
         <div className="slider-content" ref={sliderRef}>
           <div
@@ -282,9 +265,7 @@ function Slider() {
           </div>
         </div>
 
-        <div className="nav-button next-button" onClick={nextSlide}>
-          <span><i class="fas fa-arrow-right"></i></span>
-        </div>
+        
       </div>
 
       <div className="pagination-dots">

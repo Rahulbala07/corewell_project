@@ -19,7 +19,7 @@
 }
 .submit_bt, .submit_bt_mobile {
   background: linear-gradient(to right, #4dbbff, #6cff5f)!important; /* Stronger green to blue */
-  color: white;
+  color: white !important;
   font-weight: 600;
   padding: 1rem 1.5rem;
   border-radius: 5px;
@@ -29,6 +29,10 @@
   overflow: hidden;
   position: relative;
   transition: background 0.4s ease;
+}
+.submit_bt span{
+  margin: 0px !important;
+  color: white !important;
 }
 
 /* Text inside span for animation */

@@ -27,7 +27,7 @@ function Header() {
                         <img src="/name.png" alt="Brand Name" style={{width:"150px",height:"30px"}} />
                     </div>
 				</div>
-				<div>
+				<div className='nav-container'>
 					<ul>
 						<li>
 							<NavLink to="/" activeClassName="active">

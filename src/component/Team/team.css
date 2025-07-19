@@ -1,0 +1,82 @@
+.team-section {
+  background: linear-gradient(to bottom, #2ecc71 50%, #ffffff 50%);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-section h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.team-section p {
+  color: #dfffe6;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.team-card h3 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.team-card span {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+.Enquiry-btn{
+    margin-top: 10px;
+}
+.team-card p {
+  font-size: 13px;
+  color: #888;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #2ecc71;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #27ae60;
+}

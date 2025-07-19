@@ -79,7 +79,7 @@ body {
   justify-content: center;
   position: relative;
   height: 500px;
-  background: #fafafa;
+  /* background: #fafafa; */
 }
 
 /* Navigation buttons */
@@ -282,7 +282,7 @@ body {
   justify-content: center;
   gap: 16px;
   padding: 40px 0;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
   animation: slideInUp 0.8s ease-out 0.4s both;
 }
 
@@ -472,11 +472,6 @@ body {
   
   .slider-wrapper {
     height: 450px;
-  }
-  
-  .slider-content {
-    /* width: ; */
-    /* margin: 0 60px; */
   }
 }
 

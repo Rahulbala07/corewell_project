@@ -32,6 +32,9 @@
   pointer-events: none;
 }
 
+.Team-container{
+  width: 100%;
+}
 
 
 .parent-home {

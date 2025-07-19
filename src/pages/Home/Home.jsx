@@ -3,6 +3,7 @@ import './home.css';
 import { FaPlay } from 'react-icons/fa6';
 import WhyChooseUs from '../../component/Choose/Choose';
 import Slider from '../../component/Slider/Slider';
+import Team from '../../component/Team/Team';
 
 function Home() {
   return (
@@ -39,6 +40,9 @@ function Home() {
       
       <div className="hero-image" data-aos="fade-left" data-aos-duration="2000">
       <WhyChooseUs/>
+      </div>
+      <div className='Team-container'>
+      <Team/>
       </div>
     </div>
   );
