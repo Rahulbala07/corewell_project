@@ -25,7 +25,13 @@ function Slider() {
       content: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       bgColor: "#FFFFFF",
       image: "https://campustechnology.com/-/media/EDU/CampusTechnology/2019-Images/20191209online.jpg"
+<<<<<<< Updated upstream
     }
+=======
+    },
+    
+
+>>>>>>> Stashed changes
   ];
    const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
