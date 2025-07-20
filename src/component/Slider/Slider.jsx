@@ -8,15 +8,15 @@ import Button from '../Button/Button';
 
 const slides = [
   {
-    image: "/course-1.png",
+    image: "/",
     caption: "Flexible Learning"
   },
   {
-    image: "/course-2.png",
+    image: "/",
     caption: "Expert Mentors"
   },
   {
-    image: "/course-3.png",
+    image: "/",
     caption: "Interactive Projects"
   }
 ];
