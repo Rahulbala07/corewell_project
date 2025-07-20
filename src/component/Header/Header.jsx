@@ -4,13 +4,21 @@ import Button from "../Button/Button";
 import "./header.css"; // Assuming you have a CSS file for styling
 function Header() {
    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const toggleMobileMenu = () => {
+   const [isMobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+
+	const toggleMobileMenu = () => {
 		setMobileMenuOpen(!isMobileMenuOpen);
 	};
+
+	const toggleMobileDropdown = () => {
+		setMobileDropdownOpen(!isMobileDropdownOpen);
+	};
+    
     useEffect(() => {
 		const handleResize = () => {
 			if (window.innerWidth > 900) {
 				setMobileMenuOpen(false);
+				setMobileDropdownOpen(false);
 			}
 		};
 
@@ -95,10 +103,18 @@ function Header() {
 							COURSES
 						</NavLink>
 					</li>
-					<li>
-						<NavLink to="/agent" activeClassName="active">
-							ADMISSION
-						</NavLink>
+					<li className="mobile-dropdown">
+						<div className="dropdown-mobiletoggle" onClick={toggleMobileDropdown}>
+							ADMISSION 
+							<span className="icon">{isMobileDropdownOpen ? '−' : '+'}</span>
+						</div>
+						
+							<ul className={`mobile-dropdownmenu ${isMobileDropdownOpen ? 'open' : ''}`}>
+								<li><NavLink to="/admission/process">How do Join</NavLink></li>
+								<li><NavLink to="/admission/eligibility">Enroll now</NavLink></li>
+								<li><NavLink to="/admission/fees">Refer a Friend</NavLink></li>
+							</ul>
+						
 					</li>
 					<li>
 						<NavLink to="/contact" activeClassName="active">

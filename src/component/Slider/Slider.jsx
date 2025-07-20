@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './Slider.css';
+import './slider.css';
+import Button from '../Button/Button';
 
 const slides = [
   {
@@ -22,6 +23,10 @@ const slides = [
 
 const Slider = () => {
   return (
+    <>
+    <div className='Slide-head'>
+      <h2>Our Courses</h2>
+    </div>
     <div className="slider-container">
       <Swiper
         modules={[Autoplay, Pagination]}
@@ -29,7 +34,7 @@ const Slider = () => {
         slidesPerView={1}
         loop={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
         className="mySwiper"
       >
         {slides.map((slide, index) => (
@@ -38,12 +43,16 @@ const Slider = () => {
               className="slide-image"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="slide-caption">{slide.caption}</div>
+              <div className="slide-caption">
+                <Button className="submit_bt" text="Learn more" shape="square"/>
+                <Button className="submit_bt" text="Enquire Now" shape="square"/>
+              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
+    </>
   );
 };
 
