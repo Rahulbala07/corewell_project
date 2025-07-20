@@ -19,7 +19,7 @@ function Home() {
 
 
         <h1 className="main-heading" >
-          Transform Your Future with <span className='gen'>Next-Gen</span> <span>Medical Coding Education</span>
+          Transform Your Future with <span className='gradient-text'>Next-Gen</span> <span className='gradient-text'>Medical Coding Education</span>
         </h1>
         <p className="description">
           Gain in-demand skills through expert-led, interactive training designed for real-world success.
