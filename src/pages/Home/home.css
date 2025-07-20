@@ -3,7 +3,7 @@
 }*/
 .hero-container {
 
-  background-image: url('/public/hero-image.jpeg');
+  background-image: url('E:\Arsh_Info_Tech\corewell_project\corewell_project\public\bg-1.avif');
   background-size: cover;
   background-position: center 30%; /* adjust as needed */
   background-repeat: no-repeat;
@@ -129,6 +129,7 @@
 .main-heading span {
   color: #007bff;
 }
+
 
 .description {
   font-size: 1rem;

@@ -42,7 +42,7 @@ const MeetTheTeam = () => {
               <a href="#"><FaLinkedinIn /></a>
             </div>
             <div className='Enquiry-btn'>
-            <Button className="submit_bt" text="Enquire Now" shape="square"/>
+            <Button className="submit_bt" text="CONNECT" shape="square"/>
             </div>
           </div>
         ))}
