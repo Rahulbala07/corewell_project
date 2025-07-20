@@ -1,81 +1,254 @@
 .why-choose-section {
-  padding: 4rem 2rem;
-  background: #f9fcff;
-  font-family: 'Manrope', sans-serif;
- 
-}
-.hero-image{
-    width: 100%;
+  /* padding: 4rem 1rem; */
+  background-color: #fff;
+  margin-top: 4rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .why-choose-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Left: Stats */
+/* .why-choose-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.why-choose-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  flex: 1;
-}
+  flex: 1 1 45%;
+  justify-content: flex-start;
+} */
+ .why-choose-stats{
+  display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(9,50px);
+   row-gap: 1rem;
+   column-gap: 1rem;
+   flex:1;
+
+ }
 
 .stat-box {
-  background: #e7f5ff;
-  padding: 1.5rem;
-  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 2rem;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  width: 220px;
+  min-height: 200px;
   transition: transform 0.3s ease;
 }
-.stat-box:hover {
-  transform: translateY(-5px);
+.stat-box.box1 {
+  grid-column: 1;
+  grid-row: 1 / 5;
 }
+
+/* Box 2: column 1, rows 5–9 */
+.stat-box.box2 {
+  grid-column: 1;
+  grid-row: 5 / 9;
+}
+
+/* Box 3: column 2, rows 2–5 */
+.stat-box.box3 {
+  grid-column: 2;
+  grid-row: 2 / 6;
+}
+
+/* Box 4: column 2, rows 6–10 */
+.stat-box.box4 {
+  grid-column: 2;
+  grid-row: 6 / 10;
+}
+
+
+.stat-box:hover {
+  transform: translateY(-8px);
+}
+
+.stat-box img {
+  margin-bottom: 1rem;
+  height: 60px;
+}
+
 .stat-box h2 {
   font-size: 2.5rem;
-  color: #06a6f0;
-  margin: 0;
-}
-.stat-box p {
-  font-size: 1rem;
-  color: #333;
-  margin-top: 0.5rem;
-  font-weight: 600;
-}
-
-.why-choose-reasons {
-  flex: 1;
-  min-width: 280px;
-}
-.why-choose-reasons h3 {
-  font-size: 2rem;
-  color: #222;
-  margin-bottom: 1rem;
+  color: #121212;
+  margin: 0.5rem 0;
   font-weight: 800;
 }
-.why-choose-reasons ul {
-  list-style: disc;
-  padding-left: 1.2rem;
-  color: #444;
-  font-size: 1.1rem;
-  line-height: 2;
+
+.stat-box p {
+  font-size: 1rem;
+  color: #7a7a7a;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
+/* Right: Reasons */
+.why-choose-reasons {
+  flex: 1 ;
+  
+}
+ .badge-custom {
+          background: linear-gradient(45deg, #4dbbff, #6cff5f);
+          color: white;
+          padding: 8px 20px;
+          border-radius: 25px;
+          font-size: 0.9rem;
+          font-weight: 500;
+          display: inline-block;
+          margin-bottom: 20px;
+        }
+        
+        .main-title {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #2c3e50;
+          line-height: 1.2;
+          margin-bottom: 20px;
+        }
+        
+        .gradient-text {
+          background: linear-gradient(45deg, #4dbbff, #6cff5f);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        
+        .description-text {
+          color: #6c757d;
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 30px;
+        }
+        
+        .reason-item {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 15px;
+          transition: all 0.2s ease;
+        }
+        
+        .reason-item:hover {
+          color: #2c3e50;
+        }
+        
+        .check-icon {
+          width: 24px;
+          height: 24px;
+          background: linear-gradient(to right, #4dbbff, #6cff5f)!important;;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+          margin-top: 2px;
+          flex-shrink: 0;
+        }
+        
+        .reason-text {
+          color: #495057;
+          font-weight: 500;
+          font-size: 1.1rem;
+          margin: 0;
+        }
+        
+        .cta-button {
+          background: linear-gradient(to right, #4dbbff, #6cff5f)!important;
+          border: none;
+          color: white !important;
+          padding: 15px 30px;
+          font-size: 1.1rem;
+          font-weight: 600;
+          border-radius: 15px;
+          transition: all 0.3s ease;
+          margin-bottom: 1rem;
+        }
+        
+        .cta-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 25px rgba(103, 58, 183, 0.4);
+          color: white;
+        }
+
+.why-choose-reasons h3 {
+  font-size: 0.875rem;
+  background-color: #fce9f0;
+  color: #c63a75;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.why-choose-reasons h2 {
+  font-size: 2.5rem;
+  color: #121212;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.why-choose-reasons p {
+  font-size: 1.125rem;
+  color: #5b5b5b;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.why-choose-reasons ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.why-choose-reasons ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.why-choose-reasons ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #299ee7;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
   .why-choose-container {
     flex-direction: column;
+    align-items: center;
   }
 
-  .why-choose-stats {
-    grid-template-columns: 1fr;
+  .why-choose-stats,
+  .why-choose-reasons {
+    flex: 1 1 100%;
+    text-align: center;
   }
 
-  .why-choose-reasons ul {
-    padding-left: 1.5rem;
+  .why-choose-reasons h3 {
+    margin: 1rem auto;
+  }
+
+  .why-choose-reasons ul li {
+    text-align: left;
+    justify-content: center;
+  }
+
+  .stat-box {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }

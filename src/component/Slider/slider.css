@@ -1,26 +1,26 @@
 .slider-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   border-radius: 15px;
 }
 .Slide-head{
   
-  margin-top: 1rem;
+  margin-top: 2rem;
   
 }
 .Slide-head h2{
   font-size: 2.5rem !important;
-  font-weight: 600 !important;
+  font-weight: 800 !important;
   color: #242424;
 }
 
 .slide-image {
   width: 100%;
-  height: 700px;
+  height: 450px;
     /* padding: 2rem 0; */
   border-radius: 12px;
   background-size: cover;
@@ -41,4 +41,63 @@
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: 600;
+}
+@media(max-width:1000px){
+  .slider-container{
+    max-width: 900px;
+  }
+  .slide-image {
+    height: 500px;
+  }
+
+}
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 1rem 0;
+    /* max-width: 700px; */
+  }
+
+  .Slide-head h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .slide-image {
+    height: 400px;
+  }
+
+  .slide-caption {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (max-width:600px){
+  .slide-image {
+    height: 300px;
+  }
+  
+}
+
+/* -------------------------- */
+/* 📱 Very Small Devices */
+/* -------------------------- */
+@media (max-width: 480px) {
+  .Slide-head h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .slide-image {
+    height: 250px;
+  }
+
+  .slide-caption {
+    font-size: 0.8rem;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+  .slide-caption button{
+    padding: 4px !important;
+  
+  }
 }

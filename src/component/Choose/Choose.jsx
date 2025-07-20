@@ -9,6 +9,13 @@ const stats = [
   { label: "Placement Rate", value: 100, suffix: "%" },
   { label: "Expert Mentors", value: 25, suffix: "+" },
 ];
+const reasons = [
+  "Globally Recognized Certification Programs",
+  "Live Mentorship from Certified Coders", 
+  "100% Placement Support Rate",
+  "Hands-on, Practical Medical Coding Training",
+  "Online Learning Training"
+];
 
 function WhyChooseUs() {
   return (
@@ -17,28 +24,64 @@ function WhyChooseUs() {
         {/* Left: Counters */}
         <div className="why-choose-stats" data-aos="fade-right">
           {stats.map((stat, i) => (
-            <div key={i} className="stat-box">
-              <h2>
-                <CountUp end={stat.value} duration={2} />{stat.suffix}
-              </h2>
-              <p>{stat.label}</p>
-            </div>
+             <div
+    key={i}
+    className={`stat-box box${i+1}`}
+  >
+    <h2>
+      <CountUp end={stat.value} duration={2} />
+      {stat.suffix}
+    </h2>
+    <p>{stat.label}</p>
+  </div>
           ))}
         </div>
 
-        {/* Right: Reasons */}
-        <div className="why-choose-reasons" data-aos="fade-left">
-          <h3>Why Choose Us?</h3>
-          <ul>
-            <li>Globally Recognized Certification Programs</li>
-            <li>Live Mentorship from Certified Coders</li>
-            <li>100% Placement Support Rate</li>
-            <li>Hands-on, Practical Medical Coding Training</li>
-            <li>Online Learning Training</li>
-          </ul>
+        <div className="col-lg-6">
+              <div className="ps-lg-4">
+                {/* Header */}
+                <div className="badge-custom">
+                  WHY CHOOSE US
+                </div>
+                
+                <h2 className="main-title">
+                  Empowering You with
+                  <br />
+                  <span className="gradient-text">
+                    Expertise and Support
+                  </span>
+                </h2>
+                
+                <p className="description-text">
+                  Benefit from our expert-led medical coding courses designed for your success. 
+                  We offer comprehensive support and industry-relevant knowledge.
+                </p>
+
+                {/* Reasons List */}
+                <div className="mb-4">
+                  {reasons.map((reason, index) => (
+                    <div key={index} className="reason-item">
+                      <div className="check-icon">
+                        <svg width="12" height="12" fill="white" viewBox="0 0 24 24">
+                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                      </div>
+                      <p className="reason-text">
+                        {reason}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA Button */}
+                <button className="btn cta-button">
+                  Get Started Today
+                </button>
+              </div>
+            </div>
         </div>
-      </div>
     </section>
+    
   );
 }
 

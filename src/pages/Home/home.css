@@ -20,6 +20,9 @@
 
 
 }
+.hero-image{
+  width: 90%;
+}
 
 .hero-container::after {
   content: '';
