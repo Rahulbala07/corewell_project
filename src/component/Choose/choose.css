@@ -11,7 +11,7 @@
   align-items: center;
   /* flex-wrap: wrap; */
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
   gap: 2rem;
 }
 
