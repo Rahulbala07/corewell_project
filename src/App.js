@@ -9,6 +9,8 @@ import './App.css';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import DetailsPage from './pages/Coursedetail/Coursedetail';
+import CourseList from './pages/Course/Course';
+import Course from './pages/Course/Course';
 
 function App() {
 		useEffect(() => {
@@ -28,10 +30,9 @@ function App() {
 							<Routes>
 								<Route path="/" element={<Home />} />
 								<Route path="/detail/:id" element={<DetailsPage/>} />
-								{/* <Route path="/about" element={<About_Page />} />
-								<Route path="/properties" element={<Properties />} />
-								<Route path="/agent" element={<Agent />} />
-								<Route path="/contact" element={<Contact />} /> */}
+								<Route path="/courses" element={<Course />} />
+								{/* <Route path="/agent" element={<Agent />} />
+								<Route path="/contact" element={<Contact />} /> */ }
 								
 							</Routes>
 							<Footer />
