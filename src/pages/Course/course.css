@@ -5,7 +5,7 @@
 
 /* Top gradient header */
 .course-header {
-  background: linear-gradient(to bottom, #f5f6ff, #c99af6, #627eff);
+  background: linear-gradient(to right, #f5f6ff, #2aa7f5, #4ef43f);
   padding: 3rem 2rem 6rem;
   color: #0a0a0a;
 }
