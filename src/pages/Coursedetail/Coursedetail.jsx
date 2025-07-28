@@ -82,7 +82,7 @@ const [showAll, setShowAll] = useState(false);
      </div>
      <div className="container py-5">
         <div className="row g-4">
-          {/* Left Column - Main Content */}
+
           <div className="col-lg-8">
             {/* Course Image */}
             <div className="card shadow-sm mb-4 course-image">
@@ -208,11 +208,9 @@ const [showAll, setShowAll] = useState(false);
             </div>
           </div>
 
-          {/* Right Sidebar */}
           <div className="col-lg-4">
             <div className="card enroll-card shadow-sm sticky-top">
               <div className="card-body">
-                {/* Enrollment Buttons */}
                 <div className="d-grid gap-2 mb-4">
                   <a href="focus-enroll" className="btn btn-primary btn-lg">
                     Enroll Now <i className="fas fa-arrow-right ms-2"></i>

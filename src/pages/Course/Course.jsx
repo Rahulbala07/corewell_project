@@ -22,7 +22,7 @@ const courses = [
 const CourseList = () => {
     const navigate=useNavigate()
 const handleNavigate = () => {
-    navigate('/'); // Navigates to home page
+    navigate('/'); 
   };
   return (
     <div className="course-page">
@@ -33,8 +33,6 @@ const handleNavigate = () => {
           <span className="course-count">🎉 3 Courses</span>
         </div>
       </div>
-
-      {/* Main white area */}
       <div className="course-content-section">
         <div className="course-grid">
           {courses.map((course, index) => (
