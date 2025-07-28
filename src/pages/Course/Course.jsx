@@ -6,13 +6,13 @@ import { useNavigate } from 'react-router-dom';
 const courses = [
   {
     title: 'BMCT',
-    mode: 'Classroom / Online Training',
+    mode: 'Online Training',
     description: 'Medical coding is indispensable in healthcare, as it transforms procedures, diagnoses, and services into universal alphanumeric codes.',
     image: 'https://static.vecteezy.com/system/resources/thumbnails/035/314/037/small_2x/ai-generated-professional-man-in-suit-standing-confidently-in-office-generative-ai-free-photo.jpg'
   },
   {
     title: 'CPC',
-    mode: 'Classroom / Online Training',
+    mode: 'Online Training',
     description: 'CPC courses are structured to equip individuals with the skills and knowledge required to accurately assign medical codes.',
     image: 'https://static.vecteezy.com/system/resources/thumbnails/035/314/037/small_2x/ai-generated-professional-man-in-suit-standing-confidently-in-office-generative-ai-free-photo.jpg'
   }
