@@ -5,7 +5,7 @@
 
   background-image: url('../../../public/bg-1.avif');
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   background-size: cover;
   background-position: center 30%; /* adjust as needed */
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
   content: '';
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   height: 35%;
    background: linear-gradient(to top, rgb(102, 207, 225), rgba(245, 245, 245, 0));
   z-index: -1;
@@ -40,7 +40,11 @@
 .Team-container{
   width: 100%;
 }
-
+.parent-home,
+.hero-container {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 .parent-home {
   height: 100%;

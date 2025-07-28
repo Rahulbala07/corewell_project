@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Basic Medical Coding Training",
+    "abb":"BMCT",
+    "sections": [
+      {
+        "id": "offerings",
+        "title": "Course Offerings:",
+        "type": "text",
+        "icon": "",
+        "content": "Participants will master the accurate translation of medical diagnoses, procedures, services, and equipment into standardized alphanumeric codes essential for billing, insurance claims, and data analysis."
+      },
+      {
+        "id": "topics",
+        "title": "Course Topics:",
+        "type": "list",
+        "icon": "fas fa-file-text text-primary",
+        "content": [
+          "Language of Medicines (Medical Terminology, Anatomy, Physiology, Pathology, Laboratory Techniques, etc.)",
+          "ICD-10-CM Coding Conventions and Chapter specific guidelines",
+          "Introduction to CPT Procedure Coding Terminologies",
+          "HCPCS basic Guidelines and Modifiers",
+          "Introduction on HIPAA rules and guidelines",
+          "HCPCS basic Guidelines and Modifiers concepts",
+          "Introduction to Revenue Cycle Management",
+          "Patient report analysis with sample Medical records",
+          "Final certification exam and Mock Interview",
+          "This course is designed to equip you with comprehensive skills..."
+        ]
+      },
+      {
+        "id": "highlights",
+        "title": "Highlights:",
+        "type": "list",
+        "icon": "fas fa-star text-warning",
+        "content": [
+          "12+ Years Experienced Certified Trainers",
+          "Free study materials and Manuals",
+          "Chapter wise Assessments every week",
+          "Final Certification Exam",
+          "Mock Interview to Crack Placements",
+          "100% Job Placement Assistance",
+          "24/7 Whatsapp Support for Doubt Clarification"
+        ]
+      },
+      {
+        "id": "audience",
+        "title": "Who This Course Is For:",
+        "type": "list",
+        "icon": "fas fa-user text-info",
+        "content": [
+          "Life science students",
+          "Individuals interested in a career as a medical biller and coder",
+          "Practice consultants unfamiliar with the medical billing and coding process"
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration:",
+        "type": "text",
+        "icon": "fas fa-clock text-success",
+        "content": "1.5 months"
+      }
+    ]
+  },
+  {
+    "name": "Advanced Coding Course",
+    "abb":"CPC",
+    "sections": [
+      {
+        "id": "adv_topics",
+        "title": "Advanced Topics:",
+        "type": "list",
+        "icon": "fas fa-cogs text-danger",
+        "content": [
+          "ICD-11 Readiness",
+          "Advanced CPT modifiers",
+          "Coding audits and compliance",
+          "AI-assisted coding tools"
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration:",
+        "type": "text",
+        "icon": "fas fa-clock text-success",
+        "content": "2 months"
+      }
+    ]
+  }
+]

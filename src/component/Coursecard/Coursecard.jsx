@@ -9,7 +9,7 @@ const CourseCard = ({ image, title, mode, description }) => {
         <h2>{title}</h2>
         <p className="card-mode">📖 {mode}</p>
         <p className="card-desc">{description}</p>
-        <a href="#" className="card-link">Learn More →</a>
+        <a href={`/detail/${title}`} className="card-link">Learn More →</a>
       </div>
     </div>
   );
