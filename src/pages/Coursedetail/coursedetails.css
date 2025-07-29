@@ -10,11 +10,18 @@
    box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41) !important;
    border:none
 }
+.nav-link.active{
+  background-color: #079bf7 !important;
+}
 .course-nav{
  box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41) !important;
 }
 #overview{
    box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41) !important;
+   border: none;
+}
+#coursecontent{
+  box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41) !important;
    border: none;
 }
 #overview h4,h5{
@@ -42,10 +49,24 @@
 }
 .span-show{
    cursor: pointer;
-    color:#0d6efd; 
+    color:#079bf7; 
     display: inline-block; 
     font-size: 14px;
     font-weight: 500;
+}
+.accordion-item{
+  border: none !important;
+  padding: 1rem;
+}
+.accordion-item button{
+  font-size: 18px;
+  font-weight: 700;
+  color: #242424;
+  padding: 0rem !important;
+}
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+  color:#079bf7!important
 }
 .course-nav ul{
   padding: 10px;
@@ -84,14 +105,16 @@
     left: 3px;
     position: absolute;
     background: #fff;
-    width: calc(100% - 6px);
-    height: calc(100% - 6px);
+
     /* border-radius: var(--radius); */
 }
 .enroll-card{
   top: 80px !important;
   z-index: 10;
+  border: none !important;
+  
 }
+
 .enroll-card {
   margin-top: -400px;
 }
@@ -141,6 +164,16 @@
   text-decoration: none;
   font-weight: 500;
 }
+.btn-primary{
+  background-color: #079bf7 !important;
+  font-size: 16px !important;
+}
+.btn-primary:hover{
+  background-color: #009bfc !important;
+}
+.btn-outline-primary:hover{
+   background-color: #009bfc !important;
+}
 
 .page-list li.active {
   color: #000;
@@ -155,10 +188,10 @@
 
 /* Heading style */
 .title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 800;
   color: #1c1c1c;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 /* Description */
@@ -189,5 +222,12 @@
 .rbt-meta li i {
   margin-right: 8px;
   font-size: 18px;
-  color: #6c63ff;
+}
+.btn-outline-primary:active {
+  background-color: transparent !important;
+
+}
+.btn-outline-primary{
+  font-size: 14px;
+  font-weight: 700;
 }

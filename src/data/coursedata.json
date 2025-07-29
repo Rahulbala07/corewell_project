@@ -2,6 +2,20 @@
   {
     "name": "Basic Medical Coding Training",
     "abb":"BMCT",
+    "description": "Medical coding is essential in healthcare...",
+  "image": "/course-1.png",
+    "tags": [
+    { "icon": "fa-solid fa-calendar", "label": "Expert Trainers" },
+    { "icon": "fa-solid fa-globe", "label": "Online Training" },
+    { "icon": "fa-solid fa-award", "label": "Certified Course" }
+  ],
+  "overview":"This course provides essential skills and knowledge to kickstart a career in medical coding. Our meticulously crafted curriculum offers a deep understanding of healthcare coding essentials, preparing you for roles in medical coding departments, healthcare facilities, and insurance companies.",
+    "keyComponents": [
+    "ICD-10-CM",
+    "CPT Coding",
+    "HIPAA Compliance"
+  ],
+
     "sections": [
       {
         "id": "offerings",
@@ -61,7 +75,13 @@
         "icon": "fas fa-clock text-success",
         "content": "1.5 months"
       }
-    ]
+    ],
+    "details": [
+    { "label": "Weekdays", "value": "1.5 months / 2hrs per day" },
+    { "label": "Certification", "value": "YES - Provided", "badgeClass": "bg-success" },
+    { "label": "Course Fees", "value": "Rs.8000/-", "badgeClass": "bg-primary" }
+  ]
+
   },
   {
     "name": "Advanced Coding Course",
