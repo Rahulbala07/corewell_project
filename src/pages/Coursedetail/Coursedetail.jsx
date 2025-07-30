@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import CourseAccordion from '../../component/couseAccordation/CourseAccordation';
 import courseData from '../../data/coursedata.json';
 import './coursedetails.css';
+import { useRef,useEffect } from 'react';
+import Button from '../../component/Button/Button';
 
 const CourseDetailsPage = () => {
   const { title } = useParams();
@@ -12,6 +14,32 @@ const CourseDetailsPage = () => {
   const [activeAccordion, setActiveAccordion] = useState('');
   const [activeTab, setisactiveTab] = useState('overview');
   const [showAll, setShowAll] = useState(false);
+    const overviewRef = useRef(null);
+  const courseContentRef = useRef(null);
+    useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.4, // 40% visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          setisactiveTab(id); // This will be 'overview' or 'coursecontent'
+        }
+      });
+    }, options);
+
+    if (overviewRef.current) observer.observe(overviewRef.current);
+    if (courseContentRef.current) observer.observe(courseContentRef.current);
+
+    return () => {
+      if (overviewRef.current) observer.unobserve(overviewRef.current);
+      if (courseContentRef.current) observer.unobserve(courseContentRef.current);
+    };
+  }, []);
 
   if (!course) return <div className="container py-5">Course Not Found</div>;
 
@@ -23,6 +51,9 @@ const CourseDetailsPage = () => {
   const mid = Math.ceil(itemsToShow.length / 2);
   const column1 = itemsToShow.slice(0, mid);
   const column2 = itemsToShow.slice(mid);
+
+
+
 
   return (
     <>
@@ -68,7 +99,7 @@ const CourseDetailsPage = () => {
               </ul>
             </div>
 
-            <div className="card shadow-sm mb-4" id="overview">
+            <div className="card shadow-sm mb-4" id="overview" ref={overviewRef}>
               <div className="card-body">
                 <h4 className="card-title mb-3">What you'll learn</h4>
                 <hr />
@@ -105,7 +136,7 @@ const CourseDetailsPage = () => {
               </div>
             </div>
 
-            <div className="card shadow-sm mb-4" id="coursecontent">
+            <div className="card shadow-sm mb-4" id="coursecontent" ref={courseContentRef}>
               <div className="card-body">
                 <h4 className="card-title mb-3">Course Content</h4>
                 <CourseAccordion
@@ -157,8 +188,12 @@ const CourseDetailsPage = () => {
           <div className="col-lg-4">
             <div className="card enroll-card shadow-sm sticky-top">
               <div className="card-body">
-                <div className="d-grid gap-2 mb-4">
-                  <a href="/focus-enroll" className="btn btn-primary btn-lg">Enroll Now <i className="fas fa-arrow-right ms-2"></i></a>
+                <div className="d-grid gap-2 mb-4 enroll-buttons">
+                  <Button
+								className="submit_bt"
+								text="Enroll now"
+								shape="square"
+							/>
                   <a href="/focus-contact" className="btn btn-outline-primary">Contact Us <i className="fas fa-arrow-right ms-2"></i></a>
                 </div>
                 <h6 className="text-muted mb-3"><i className="fas fa-rotate-ccw me-2"></i>{course.title}</h6>
@@ -170,7 +205,7 @@ const CourseDetailsPage = () => {
                         <tr key={idx}>
                           <td>{detail.label}</td>
                           <td>
-                            <span className={`badge ${detail.badgeClass || 'bg-light text-dark'}`}>{detail.value}</span>
+                            <span className={`badge ${detail.badgeClass || 'bg-light'}`} style={{color:"#6b7385",fontSize:"14px"}}>{detail.value}</span>
                           </td>
                         </tr>
                       ))}
@@ -179,17 +214,17 @@ const CourseDetailsPage = () => {
                 </div>
 
                 <div className="text-center mb-4">
-                  <div className="d-flex justify-content-center gap-2 mb-3">
-                    <a href="https://www.facebook.com/focusmedicalcoding" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm">
-                      <i className="fab fa-facebook"></i>
+                  <div className="d-flex justify-content-center align-items-center gap-2 mb-3 social-icon">
+                    <a href="https://www.facebook.com/focusmedicalcoding" target="_blank" rel="noopener noreferrer" >
+                      <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://www.twitter.com" className="btn btn-outline-info btn-sm">
+                    <a href="https://www.twitter.com" >
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com/focushealthcare.info/?hl=en" target="_blank" rel="noopener noreferrer" className="btn btn-outline-danger btn-sm">
+                    <a href="https://www.instagram.com/focushealthcare.info/?hl=en" target="_blank" rel="noopener noreferrer" >
                       <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/focus-healthcare-solutions-764b1a199/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm">
+                    <a href="https://www.linkedin.com/in/focus-healthcare-solutions-764b1a199/" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-linkedin"></i>
                     </a>
                   </div>
