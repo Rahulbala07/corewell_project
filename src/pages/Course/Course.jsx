@@ -7,15 +7,21 @@ const courses = [
   {
     title: 'BMCT',
     mode: 'Online Training',
-    description: 'Medical coding is indispensable in healthcare, as it transforms procedures, diagnoses, and services into universal alphanumeric codes.',
-    image: 'https://static.vecteezy.com/system/resources/thumbnails/035/314/037/small_2x/ai-generated-professional-man-in-suit-standing-confidently-in-office-generative-ai-free-photo.jpg'
+    description: 'Medical coding is essential in healthcare because it converts procedures, diagnoses, and services into standardized alphanumeric codes. These codes play critical roles in billing, recordkeeping, research, and ensuring accurate insurance reimbursements.',
+    image: '/basic medical coding .jpg'
+  },
+  {
+    title: 'AMCT',
+    mode: 'Online Training',
+    description: 'This course aims to provide a foundational understanding of medical coding principles while preparing participants for the CPC certification exam administered by the American Academy of Professional Coders (AAPC). It integrates basic coding skills with advanced training required for CPC certification.',
+    image: '/AMCT course.jpg'
   },
   {
     title: 'CPC',
     mode: 'Online Training',
-    description: 'CPC courses are structured to equip individuals with the skills and knowledge required to accurately assign medical codes.',
-    image: 'https://static.vecteezy.com/system/resources/thumbnails/035/314/037/small_2x/ai-generated-professional-man-in-suit-standing-confidently-in-office-generative-ai-free-photo.jpg'
-  }
+    description: 'CPC courses are structured to equip individuals with the skills and knowledge required to accurately assign medical codes to diagnoses and procedures for reimbursement purposes in healthcare settings.',
+    image: '/cpc.jpg'
+  },
 ];
 
 
