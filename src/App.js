@@ -12,6 +12,7 @@ import DetailsPage from './pages/Coursedetail/Coursedetail';
 import CourseList from './pages/Course/Course';
 import Course from './pages/Course/Course';
 import CourseDetailsPage from './pages/Coursedetail/Coursedetail';
+import About from './pages/About/About';
 
 function App() {
 		useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
 								<Route path="/" element={<Home />} />
 								<Route path="/detail/:title" element={<CourseDetailsPage/>} />
 								<Route path="/courses" element={<Course />} />
+								<Route path="/about" element={<About />} />
 								{/* <Route path="/agent" element={<Agent />} />
 								<Route path="/contact" element={<Contact />} /> */ }
 								
