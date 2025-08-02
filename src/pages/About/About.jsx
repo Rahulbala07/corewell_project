@@ -144,7 +144,7 @@ const About = () => {
   <div className="thumbnail-wrapper">
     <div className="thumbnail image-1">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm2u30y1RuvnINlGTmR67PiWbZkdV7vkVi4A&s"
+        src="corewell_project\public\about-1.jpg"
         alt="Education Images"
         style={{
           transform: 'translate3d(0px, -16.515px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)',

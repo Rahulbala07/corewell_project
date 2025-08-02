@@ -3,7 +3,7 @@
 }*/
 .hero-container {
 
-  background-image: url('../../../public/bg-1.avif');
+  background-image: url('E:\Arsh_Info_Tech\corewell_project\corewell_project\public\About-bg.png');
   height: 100%;
   /* width: 100%; */
   background-size: cover;
@@ -137,7 +137,7 @@
 }
 .main-heading .gradient-text{
   background: linear-gradient(to right, #2aa7f5, #4ef43f);
-  -webkit-background-clip: text;
+  --webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
