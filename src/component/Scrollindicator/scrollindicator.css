@@ -1,0 +1,44 @@
+.scroll-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.progress-ring {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  transform: rotate(-90deg);
+}
+
+.progress-ring-track {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 3;
+}
+
+.progress-ring-indicator {
+  fill: none;
+  stroke: #0d6efd;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.arrow-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  color: #0d6efd;
+}

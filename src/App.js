@@ -13,6 +13,7 @@ import CourseList from './pages/Course/Course';
 import Course from './pages/Course/Course';
 import CourseDetailsPage from './pages/Coursedetail/Coursedetail';
 import About from './pages/About/About';
+import ScrollTopButton from './component/Scrollindicator/ScrollIndicator';
 
 function App() {
 		useEffect(() => {
@@ -38,6 +39,17 @@ function App() {
 								<Route path="/contact" element={<Contact />} /> */ }
 								
 							</Routes>
+
+							      <a
+        href="https://wa.me/"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+      >
+        <i className="fab fa-whatsapp"></i>
+      </a>
+	  <ScrollTopButton/>
 							<Footer />
 						</>
 					}

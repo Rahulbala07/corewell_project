@@ -15,22 +15,47 @@
 }
 
 /* Title & Description */
-.about-title {
+.about-inner-section {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220313/pngtree-open-ground-night-view-buildings-and-high-rise-buildings-image_996726.jpg'); /* Replace with your image path */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 700px;
+  color: #fff;
   text-align: center;
-  font-size: 42px;
-  font-weight: 800;
-  color: #1e1e2f;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+
+.about-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #00c6ff;
+  margin: 0 auto 1rem;
+  border-radius: 2px;
 }
 
 .about-description {
-  text-align: center;
-  color: #5f6572;
-  font-size: 18px;
-  max-width: 760px;
-  margin: auto;
-  margin-bottom: 60px;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
 }
+
+
 
 /* Highlight Cards */
 .about-cards {
@@ -77,54 +102,141 @@
 
 /* Core Values */
 .values-section {
-  background: #f2f6ff;
-  padding: 60px 30px;
-  border-radius: 20px;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.02);
-  margin-bottom: 60px;
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .values-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  color: #1f2937;
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 40px;
 }
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.value-card {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  background: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s ease;
-}
+
 
 .value-card:hover {
   transform: translateY(-5px);
 }
 
-.value-card h5 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #111827;
+
+.value-card {
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 60px 20px 30px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  overflow: visible;
 }
 
-.value-card p {
-  font-size: 14px;
-  color: #6b7280;
+.icon-square {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 16px; /* Rounded square */
+  background: linear-gradient(135deg, #5edcff, #60c2ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(96, 170, 255, 0.3);
+  z-index: 2;
 }
+
+.icon {
+  color: white;
+  font-size: 28px;
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 114, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 114, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(0, 114, 255, 0.4);
+  }
+}
+
+.icon-square:hover {
+  animation: pulseGlow 1.5s infinite;
+}
+
+
+
+.card-content h5 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.card-content p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
 
 /* Training Highlight Section */
+.header-about{
+  background-color: #E9967A21;
+  border-radius: 12px;
+  padding:8px;
+  display: inline-block;
+  color: #E9967A;
+}
+.para-bold{
+  color: #00c6ff;
+}
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.icon-circle i {
+  display: block;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+}
+
+/* Light background variants (based on Bootstrap colors) */
+.bg-primary-light {
+  background-color: rgba(13, 110, 253, 0.1); /* light blue */
+}
+
+.bg-success-light {
+  background-color: rgba(25, 135, 84, 0.1); /* light green */
+}
+
+.bg-warning-light {
+  background-color: rgba(255, 193, 7, 0.1); /* light yellow */
+}
+
+.bg-danger-light {
+  background-color: rgba(220, 53, 69, 0.1); /* light red */
+}
+
 .training-highlight-section {
   background: #ffffff;
   border-radius: 20px;
@@ -132,7 +244,32 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   margin-bottom: 60px;
 }
-
+.thumbnail-wrapper{
+      position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.thumbnail-wrapper .thumbnail.image-1 {
+    left: -100px;
+    position: relative;
+}
+.thumbnail-wrapper .thumbnail.image-1 img {
+    max-height: 490px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.thumbnail-wrapper .thumbnail.image-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.thumbnail-wrapper .thumbnail.image-2 img {
+    max-height: 250px;
+    object-fit: cover;
+}
+.left-about{
+  padding-right: 100px;
+}
 .training-highlight-section h2 {
   font-size: 32px;
   font-weight: 700;
@@ -169,52 +306,94 @@
 /* WhatsApp & Metrics */
 .whatsapp-metrics {
   text-align: center;
-  background: #eef4ff;
+  background: #65d5f4;
   padding: 60px 30px;
   border-radius: 16px;
   margin-bottom: 60px;
 }
+.section-subtitle{
+  font-size: 14px;
+    line-height: 15px;
+    font-weight: 500;
+    color:#ffffff;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color:#ffffff21;
+}
 
 .section-heading {
-  font-size: 30px;
+  font-size: 4rem;
   font-weight: 700;
-  color: #1d1d35;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .section-subtext {
-  color: #4a4a6a;
+  color: #ffffff;
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .whatsapp-form {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   gap: 12px;
   margin-bottom: 16px;
+  background-color: #ffffff;
+    padding: 10px 16px;
+      border-radius: 8px;
 }
 
 .whatsapp-form input {
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  width: 280px;
-}
 
-.whatsapp-form button {
-  background-color: #5b4bff;
-  color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  width: 280px;
+  font-size: 14px ;
+  color: #6b7385;
+  font-weight: 500;
+
+  
+}
+.whatsapp-form input:focus{
+  border: none;
+  outline: none;
 }
 
-.whatsapp-form button:hover {
-  background-color: #4733ff;
-}
+ .trust-indicators {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0 40px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-icon {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
 
 .note-text {
   font-size: 13px;
@@ -222,57 +401,119 @@
   margin-bottom: 30px;
 }
 
-.metrics-grid {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-}
+ .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            padding: 0px 100px;
+        }
 
-.metrics-grid h3 {
-  font-size: 36px;
-  font-weight: 800;
-  color: #0f172a;
-}
+        .metrics-grid > div {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            color: #ffffff;
+        }
 
-.metrics-grid p {
-  color: #475569;
-  font-size: 14px;
-}
+        .metrics-grid > div::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00bcd4, #4fc3f7, #29b6f6);
+            border-radius: 24px 24px 0 0;
+        }
 
-/* Service Section */
-.service-section {
-  background: #ffffff;
-  padding: 60px 30px;
-  border-radius: 16px;
-  margin-bottom: 60px;
-  text-align: center;
-}
+        .metrics-grid > div:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.2);
+        }
 
-.service-card {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: #f9fafb;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease;
-}
+        .metrics-grid h3 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #ffffff, #e3f2fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
 
-.service-card:hover {
-  transform: translateY(-4px);
-}
+        .metrics-grid p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 500;
+            line-height: 1.4;
+        }
 
-.service-card .icon {
-  font-size: 28px;
-  color: #4f46e5;
-}
+        /* Achievement Badge */
+        .achievement-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #ffd700, #ffb300);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
 
-.service-card .label {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1e293b;
-}
+        .achievement-icon {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
+        /* Add a subtle animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+
+        .metrics-grid > div:nth-child(1) {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .metrics-grid > div:nth-child(2) {
+            animation: float 6s ease-in-out infinite 3s;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .whatsapp-form {
+                flex-direction: column;
+                gap: 12px;
+                padding: 20px;
+            }
+            
+            .trust-indicators {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .metrics-grid h3 {
+                font-size: 2.8rem;
+            }
+        }
 
 /* Subscribe Section */
 .subscribe-section {
@@ -299,28 +540,29 @@
 }
 
 .subscribe-form {
-  display: flex;
+  display:inline-flex;
   gap: 10px;
   align-items: center;
+    background-color: #ffffff;
+    padding: 10px 16px;
+      border-radius: 8px;
 }
 
 .subscribe-form input {
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+
+  border: none !important;
   min-width: 240px;
+  font-size: 14px;
+  color:#6b7385;
+  font-weight: 500;
+
+}
+.subscribe-form input:focus{
+  border: none !important;
+  outline: none !important;
 }
 
-.subscribe-form button {
-  background-color: #2563eb;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
+
 
 .subscribe-form button:hover {
   background-color: #1e40af;

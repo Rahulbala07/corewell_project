@@ -5,3 +5,26 @@
     /* scrollbar-width: none;
     overflow-x: hidden; */
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 90px; /* Place it above the scroll-up button */
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
