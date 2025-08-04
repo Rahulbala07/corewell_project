@@ -3,7 +3,7 @@
 }*/
 .hero-container {
 
-  background-image: url('/public/About-bg.png');
+  background-image: url('E:\Arsh_Info_Tech\corewell_project\corewell_project\public\stcok-6.jpg');
   height: 100%;
   /* width: 100%; */
   background-size: cover;
@@ -32,7 +32,7 @@
   bottom: 0;
   width: 90%;
   height: 35%;
-   background: linear-gradient(to top, rgb(102, 207, 225), rgba(245, 245, 245, 0));
+  
   z-index: -1;
   pointer-events: none;
 }
