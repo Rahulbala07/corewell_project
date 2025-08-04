@@ -3,7 +3,7 @@
 }*/
 .hero-container {
 
-  background-image: url('E:\Arsh_Info_Tech\corewell_project\corewell_project\public\About-bg.png');
+  background-image: url('/public/About-bg.png');
   height: 100%;
   /* width: 100%; */
   background-size: cover;
@@ -135,11 +135,11 @@
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 
 }
-.main-heading .gradient-text{
-  background: linear-gradient(to right, #2aa7f5, #4ef43f);
+/* .main-heading .gradient-text{
+  background: linear-gradient(to right, #2aa7f5, #4ef43f) !important;
   --webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 
 .description {

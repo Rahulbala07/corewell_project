@@ -8,7 +8,7 @@ const CourseCard = ({ image, title, mode, description }) => {
       <div className="card-body">
         <h2>{title}</h2>
         <p className="card-mode">📖 {mode}</p>
-        <p className="card-desc">{description}</p>
+        <p className="card-desc">{description?.slice(0, 100) + "..."}</p>
         <a href={`/detail/${title}`} className="card-link">Learn More →</a>
       </div>
     </div>

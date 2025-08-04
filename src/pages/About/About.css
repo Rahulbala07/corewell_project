@@ -16,7 +16,7 @@
 
 /* Title & Description */
 .about-inner-section {
-  background-image: url('E:\Arsh_Info_Tech\corewell_project\corewell_project\public\homepage-bg.png'); /* Replace with your image path */
+  background-image: url('/public/homepage-bg.png'); /* Replace with your image path */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -29,9 +29,15 @@
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
-  padding: 60px 20px;
-  border-radius: 12px;
+      background: rgba(0, 0, 0, 0.5);
+    /* padding: 60px 20px; */
+    border-radius: 12px;
+    display: flex
+;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center
 }
 
 .about-title {
@@ -254,7 +260,7 @@
     position: relative;
 }
 .thumbnail-wrapper .thumbnail.image-1 img {
-    max-height: 490px;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 6px;
 }
