@@ -77,8 +77,8 @@
       }
     ],
     "details": [
-    { "label": "Weekdays", "value": "1.5 months / 2hrs per day" },
-    {"label": "Weekends", "value": "2.5 months / 3hrs per day" },
+    { "label": "Weekdays", "value": "1.5 months/2hrs per day" },
+    {"label": "Weekends", "value": "2.5 months/3hrs per day" },
     {"label":"Learning Mode","value":"Online"},
     {"label":"Joining Kit","value":"Study Material"},
     {"label":"Assessments","value":"Chapter Wise Test Every Week"},

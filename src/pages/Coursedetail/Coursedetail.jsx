@@ -82,7 +82,7 @@ const CourseDetailsPage = () => {
       </div>
 
       <div className="container py-5">
-        <div className="row g-4">
+        <div className="row g-4 course-page">
           <div className="col-lg-8">
             <div className="card shadow-sm mb-4 course-image">
               <img src={course.image || "/default-course.png"} className="card-img-top w-100" alt={course.title} />

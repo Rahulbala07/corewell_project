@@ -171,6 +171,7 @@
 .page-list li a {
   color: #6c757d;
   text-decoration: none;
+  font-size: medium;
   font-weight: 500;
 }
 .btn-primary{
@@ -208,10 +209,12 @@ tbody tr td{
 }
 
 .page-list li.active {
-  color: #000;
-  font-weight: 600;
+  color: #242424;
+  font-weight: 700;
 }
-
+.card-img-top{
+  height: 100%;
+} 
 /* Chevron icon */
 .icon-right i {
   font-size: 14px;
@@ -220,7 +223,7 @@ tbody tr td{
 
 /* Heading style */
 .title {
-  font-size: 40px;
+  font-size: 4.2rem;
   font-weight: 800;
   color: #1c1c1c;
   margin: 20px 0px;
@@ -262,4 +265,23 @@ tbody tr td{
 .btn-outline-primary{
   font-size: 14px;
   font-weight: 700;
+}
+
+ @media (max-width: 1200px){
+  .enroll-card{
+   margin-top: 0px;
+  
+
+  }
+  .course-page .col-lg-4{
+    width: 100% !important;
+  }
+  .course-page .col-lg-8{
+    width: 100% !important;
+  }
+  .card-img-top{
+    height: 100% !important;
+  }
+
+  
 }

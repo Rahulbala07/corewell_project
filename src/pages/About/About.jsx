@@ -259,9 +259,9 @@ const About = () => {
               </button>
           </div>
         </motion.section>
-
-        {/* CTA */}
+        <motion.section >
         <AboutCTA />
+        </motion.section>
 
     </section>
     </>

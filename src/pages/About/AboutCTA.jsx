@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const AboutCTA = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Show CTA when scrolled past 500px (you can change this)
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 700) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  if (!isVisible) return null;
+
   return (
     <div style={styles.card}>
       <h3 style={styles.text}>
-        Looking for a career in <span style={styles.highlight}>Medical Coding Carrer</span>
+        Looking for a career in <span style={styles.highlight}>Medical Coding Career</span>
       </h3>
       <Link to="/contact" style={styles.button}>
         Contact Us
@@ -25,6 +44,13 @@ const styles = {
     margin: "2rem 0",
     color: "#ffffff",
     flexWrap: "wrap",
+    position: "fixed",
+    bottom: "20px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    zIndex: 1000,
+    boxShadow: "0px 4px 12px rgba(0,0,0,0.3)",
+    width:"80%",
   },
   text: {
     fontSize: "1rem",

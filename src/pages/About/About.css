@@ -155,8 +155,8 @@
 }
 
 .icon {
-  color: white;
-  font-size: 28px;
+  /* color: white; */
+  font-size: 18px;
 }
 @keyframes pulseGlow {
   0% {
@@ -306,7 +306,7 @@
 /* WhatsApp & Metrics */
 .whatsapp-metrics {
   text-align: center;
-  background: #65d5f4;
+  background: #1abdeb;
   padding: 60px 30px;
   border-radius: 16px;
   margin-bottom: 60px;
@@ -494,11 +494,11 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            .whatsapp-form {
+            /* .whatsapp-form {
                 flex-direction: column;
                 gap: 12px;
                 padding: 20px;
-            }
+            } */
             
             .trust-indicators {
                 flex-direction: column;
