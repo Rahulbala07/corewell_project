@@ -144,7 +144,7 @@ const About = () => {
   <div className="thumbnail-wrapper">
     <div className="thumbnail image-1">
       <img
-        src="/about-1.jpg"
+        src="/about-2.jpg"
         alt="Education Images"
         style={{
           transform: 'translate3d(0px, -16.515px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)',
@@ -154,7 +154,7 @@ const About = () => {
     </div>
     <div className="thumbnail image-2 d-none d-xl-block">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm2u30y1RuvnINlGTmR67PiWbZkdV7vkVi4A&s"
+        src="/about-1.jpg"
         alt="Education Images"
         style={{
           transform: 'translate3d(0px, 43.686px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)',
@@ -164,7 +164,7 @@ const About = () => {
     </div>
     <div className="thumbnail image-3 d-none d-md-block">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm2u30y1RuvnINlGTmR67PiWbZkdV7vkVi4A&s"
+        src="/about-3.jpg"
         alt="Education Images"
         style={{
           transform: 'translate3d(0px, 20.957px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1)',
