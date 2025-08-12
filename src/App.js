@@ -40,6 +40,7 @@ function App() {
 								
 							</Routes>
 
+
 							      <a
         href="https://wa.me/"
         className="whatsapp-float"
@@ -50,6 +51,7 @@ function App() {
         <i className="fab fa-whatsapp"></i>
       </a>
 	  <ScrollTopButton/>
+	
 							<Footer />
 						</>
 					}

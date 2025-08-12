@@ -31,8 +31,8 @@
 	display: flex;
 	flex-direction: row;
 	line-height: 12px;
-	padding-bottom: 0.8rem;
-	margin-top: 1rem;
+	padding-bottom: var(--space-mx);
+	margin-top: var(--space-md);
 	gap: 0.5rem;
 }
 
@@ -41,17 +41,17 @@
 }
 
 .brand h1 {
-	font-size: 28px;
-	margin-top: 1rem;
-	font-weight: 700;
-	color: #242424;
+	font-size: var(--font-xxl);
+	margin-top: var(--space-md);
+	font-weight: var(--font-bold);
+	color: var(--primary-color);
 	line-height: 0.5;
 }
 
 .brand p {
-	font-size: 11px;
-	font-weight: 700;
-	color: #242424;
+	font-size: var( --font-ss);
+	font-weight: var(--font-bold);
+	color: var(--primary-color);
 	margin: 0;
 }
 
@@ -81,26 +81,26 @@
 .parent_header ul li a,
 .parent_header ul li span {
 	text-decoration: none;
-	font-size: 14px;
-	font-weight: 600;
-	color: #242424;
+	font-size: var(--font-sm);
+	font-weight: var(--font-semibold);
+	color: var(--primary-color);
 	padding: 0.4rem 0.7rem;
-	border-radius: 6px;
+	border-radius: var(--radius-xm);
 	letter-spacing: 2px;
 	transition: all 0.3s ease;
 }
 
 .parent_header ul li a:hover,
 .parent_header ul li span:hover {
-	background-color: #f2f9ff;
-	color: #299ee7;
+	background-color: var(--background-hover);
+	color: var(--hover-color);
 	cursor: pointer;
 }
 
 /* Active link */
 .parent_head .active {
-	color: #299ee7;
-	background-color: #eaf6ff;
+	color: var(--hover-color);;
+	background-color: var(--background-hover);
 }
 
 /* ==================== Dropdown ==================== */
@@ -114,22 +114,22 @@
 	display: flex;
 	align-items: center;
 	gap: 5px;
-	color: #242424;
-	font-weight: 600;
-	font-size: 13px;
+	color: var(--primary-color);
+	font-weight: var(--font-semibold);
+	font-size: var(--font-ls);
 	letter-spacing: 2px;
 	transition: color 0.3s ease;
 }
 
 .arrow-icon {
-	font-size: 12px;
+	font-size: var(--font-xs);
 	transition: transform 0.3s ease;
 	display: inline-block;
 }
 
 .dropdown:hover .arrow-icon {
 	transform: rotate(270deg);
-	color: #299ee7;
+	color: var(--hover-color);
 }
 
 /* Dropdown menu styles */
@@ -138,13 +138,13 @@
 	top: 100%;
 	left: 0;
 	background: #ffffff;
-	border-radius: 8px;
-	padding: 0.5rem 0;
+	border-radius: var(--radius-md);
+	padding: var(--space-xs) 0;
 	display: flex;
 	gap: 0rem !important;
 	flex-direction: column;
 	gap: 10px;
-	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+	box-shadow: var(--shadow-xl);
 	opacity: 0;
 	visibility: hidden;
 	margin-top: 5px;
@@ -160,39 +160,39 @@
 }
 
 .dropdown-menu li {
-	padding: 0.4rem 1rem !important;
+	padding: 0.4rem var(--space-md) !important;
 	width: 100%;
 	white-space: nowrap;
 }
 
 .dropdown-menu a {
-	color: #222;
+	color: var(--primary-color);
 	text-decoration: none;
-	font-size: 13px;
-	font-weight: 500;
-	border-radius: 4px;
-	padding: 6px 8px;
+	font-size: var(--font-sm);
+	font-weight: var(--font-medium);
+	border-radius: var(--radius-sm);
+	padding: var(--space-xss) var(--space-xs);
 	transition: background 0.2s ease;
 }
 
 .dropdown-menu a:hover {
-	background: #f2f9ff;
-	color: #299ee7;
+	background: var(--background-hover);
+	color: var(--hover-color);
 }
 
 /* ==================== Join Button ==================== */
 .parent_header .submit_bt {
-	border-radius: 10px;
-	font-size: 14px;
+	border-radius: var(--radius-ml);
+	font-size: var(--font-sm);
 }
 
 /* ==================== Hamburger Menu ==================== */
 .parent_head .menu {
-	font-size: 16px;
+	font-size: var(--font-md);
 	display: none;
 	cursor: pointer;
-	color: #242424;
-	margin-right: 0.5rem;
+	color:var(--primary-color);
+	margin-right: var(--space-xs);
 }
 
 .parent_head i {
@@ -218,13 +218,13 @@
 
 .mobile_header.open {
 	opacity: 1;
-	padding-bottom: 1rem;
+	padding-bottom: var(--space-md);
 	transform: translateY(0);
 	max-height: 500px;
 }
 .dropdown-mobiletoggle{
 	display: flex;
-	padding: 0rem 0.5rem;
+	padding: 0rem var(--space-xs);
 	justify-content: space-between;
 
 }
@@ -269,9 +269,9 @@
 	flex-direction: column;
 	list-style-type: none;
 	list-style: none;
-	padding: 1rem;
-	font-size: 13px;
-	font-weight: 600;
+	padding: var(--space-md);
+	font-size: var(--font-sm);
+	font-weight: var(--font-semibold);
 	gap: 0.8rem;
 	margin: 0;
 		
@@ -282,7 +282,7 @@
 }
 
 .mobile_header ul li a {
-	font-size: 13px;
+	font-size: var(--font-sm);
 	color: #242424;
 	letter-spacing: 1px;
 	border-radius: 5px;
@@ -291,8 +291,8 @@
 }
 
 .mobile_header a:hover {
-	color: #299ee7;
-	background-color: #f2f9ff;
+	color: var(--hover-color);
+	background-color: var(--background-hover);
 }
 
 .mobile_header .mobile_submit {
@@ -303,8 +303,8 @@
 }
 
 .mob_login button {
-	padding: 0.5rem 0.5rem;
-	font-size: 10px;
+	padding: var(--space-xs) 0.var(--space-xs);
+	font-size: var(--font-ss);
 	border-radius: 5px;
 }
 
@@ -312,11 +312,11 @@
 /* ==================== Responsive ==================== */
 @media (max-width: 1100px) {
 	.parent_head .submit_bt {
-		font-size: 10px;
+		font-size: var(--font-ss);
 	}
 
 	.parent_header a {
-		font-size: 10px;
+		font-size: var(--font-ss);
 	}
 }
 

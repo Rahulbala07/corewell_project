@@ -8,33 +8,65 @@ import Team from '../../component/Team/Team';
 function Home() {
   return (
     <div className="parent-home" >
-      <div className="hero-container" data-aos="fade-up" data-aos-duration="2000">
-        <div className='hero-sub-container'>
-        <h5 className="achievement-badge">
-             
-        </h5>
-        <div className="ribbon-banner">
-              <span className="ribbon-text">🏆 In India’s Most Trusted Platform for Medical Coding Careers</span>
-          </div>
+       <div className="hero-container">
+
+        <div className="floating-element floating-1"></div>
+        <div className="floating-element floating-2"></div>
+        
+        <div className="hero-content-wrapper">
+
+            <div className="hero-left">
+                <div className="ribbon-banner">
+                    <span className="ribbon-text">
+                        🏆 In India's Most Trusted Platform for Medical Coding Careers
+                    </span>
+                </div>
+
+                <h1 className="main-heading">
+                    Transform Your Future with <span className="gradient-text">Next-Gen</span>
+                    <span className="gradient-text">Medical Coding Education</span>
+                </h1>
+
+                <p className="description">
+                    Gain in-demand skills through expert-led, interactive training designed for real-world success.
+                    Our comprehensive online medical coding programs combine live mentorship, hands-on learning,
+                    and globally recognized certifications to help you advance confidently in the healthcare industry.
+                </p>
+
+              
+            </div>
 
 
-        <h1 className="main-heading" >
-          Transform Your Future with <span className='gradient-text'>Next-Gen</span> <span className='gradient-text'>Medical Coding Education</span>
-        </h1>
-        <p className="description">
-          Gain in-demand skills through expert-led, interactive training designed for real-world success.
-          Our comprehensive online medical coding programs combine live mentorship, hands-on learning,
-          and globally recognized certifications to help you advance confidently in the healthcare industry.
-        </p>
+            <div className="hero-right">
+
+                {/* <div className="stats-container">
+                    <div className="stat-card">
+                        <div className="stat-number">200+</div>
+                        <div className="stat-label">Courses • 1000+ students</div>
+                    </div>
+                    <div className="stat-card">
+                        <div className="stat-number">100+</div>
+                        <div className="stat-label">Super mentors who give experience in their respective fields</div>
+                    </div>
+                </div> */}
+
+                <div className="hero-buttons">
+                    <button className="enroll-btn">
+                        Enroll Now
+                        <span style={{"margin-left": "0.5rem"}}>▶</span>
+                    </button>
+                    <button className="download-btn">Download Brochure</button>
+                </div>
+
+                <img
+                    src="/student.jpg"
+                    alt="Medical Coding Training"
+                    className="hero-image-logo"
+                />
+            </div>
         </div>
-        <div className="hero-buttons">
-          <button className="enroll-btn">
-            Enroll Now
-            <FaPlay className="btn-icon" />
-          </button>
-          <button className="download-btn">Download Brochure</button>
-        </div>
-      </div>
+    </div>
+
     
         <Slider/>
       

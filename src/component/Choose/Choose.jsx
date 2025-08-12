@@ -4,10 +4,10 @@ import CountUp from "react-countup";
 import "./choose.css";
 
 const stats = [
-  { label: "Certified Students", value: 10000, suffix: "+" },
-  { label: "Courses Completed", value: 500, suffix: "+" },
-  { label: "Placement Rate", value: 100, suffix: "%" },
-  { label: "Expert Mentors", value: 25, suffix: "+" },
+  { label: "Certified Students", value: 10000, suffix: "+" ,icon:"/image.png"},
+  { label: "Courses Completed", value: 500, suffix: "+",icon:"/education.png" },
+  { label: "Placement Rate", value: 100, suffix: "%",icon:"/staffing.png" },
+  { label: "Expert Mentors", value: 25, suffix: "+",icon:"/leadership.png" },
 ];
 const reasons = [
   "Globally Recognized Certification Programs",
@@ -33,6 +33,7 @@ function WhyChooseUs() {
       {stat.suffix}
     </h2>
     <p>{stat.label}</p>
+    <img src={stat.icon} alt={stat.label} className="stat-icon" />
   </div>
           ))}
         </div>

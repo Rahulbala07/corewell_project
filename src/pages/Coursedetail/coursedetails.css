@@ -6,12 +6,12 @@
     min-height: 100px;
 }
 .course-image{
-  padding: 30px;
+  padding: var(--space-xl);
    box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41) !important;
    border:none
 }
 .nav-link.active{
-  background-color: #079bf7 !important;
+  background-color: var(--hover-color) !important;
 }
 .course-nav{
  box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41) !important;
@@ -26,12 +26,12 @@
    position: relative;
 }
 #overview h4,h5{
-  font-weight: 700;
-  color: #242424;
+  font-weight: var(--font-bold);
+  color: var(--primary-color);
 }
 #coursecontent h4,h5{
-    font-weight: 700;
-  color: #242424;
+    font-weight: var(--font-bold);
+  color: var(--primary-color);
 }
 #coursecontent button{
   outline: none;
@@ -43,31 +43,31 @@
 }
 
 #overview p,#coursecontent p{
-  color: #6b7385;
-  font-weight: 400;
+  color: var(--secondary-color);
+  font-weight: var( --font-regular);
   line-height:1.5;
-  font-size: 16px;
+  font-size: var(--font-md);
 }
 .span-show{
    cursor: pointer;
-    color:#079bf7; 
+    color:var(--link-color); 
     display: inline-block; 
-    font-size: 14px;
-    font-weight: 500;
+    font-size: var(--font-sm);
+    font-weight: var(--font-medium)
 }
 .accordion-item{
   border: none !important;
-  padding: 1rem;
+  padding:var(--space-md);
 }
 .accordion-item button{
-  font-size: 18px;
-  font-weight: 700;
-  color: #242424;
+  font-size: var(--font-lg);
+  font-weight: var(--font-bold);
+  color: var(--primary-color);
   padding: 0rem !important;
 }
 .accordion-button:not(.collapsed){
   background-color: transparent !important;
-  color:#079bf7!important
+  color:var(--hover-color)!important
 }
 .course-nav ul{
   padding: 10px;
@@ -86,8 +86,8 @@
 
 }
 .course-nav ul li a{
-  color: #242424;
-  font-weight: 500;
+  color: var(--primary-color);
+  font-weight:var(--font-semibold);
 }
 .courseDeatil{
   position: relative;
@@ -119,7 +119,7 @@
   
 }
 .enroll-card button{
-  font-size: 16px;
+  font-size: var(--font-md);
   text-transform: none !important;
   
 }
@@ -164,37 +164,37 @@
 }
 
 .page-list li {
-  font-weight: 500;
-  color: #6c757d;
+  font-weight: var(--font-medium);
+  color: var(--des-color);
 }
 
 .page-list li a {
-  color: #6c757d;
+  color: var(--des-color);
   text-decoration: none;
   font-size: medium;
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 .btn-primary{
-  background-color: #079bf7 !important;
-  font-size: 16px !important;
+  background-color: var(--link-color) !important;
+  font-size: var(--font-md) !important;
 }
 .btn-primary:hover{
-  background-color: #009bfc !important;
+  background-color: var(--hover-color) !important;
 }
 tbody tr td{
-  color: #6b7385 !important;
-  font-weight: 600;
+  color: var(--des-color) !important;
+  font-weight: var( --font-semibold);
 }
 .table-sm>:not(caption)>*>* {
   padding: 1rem 0.25rem;
 }
 .enroll-buttons.btn-outline-primary{
   padding: 16px 24px !important;
-  font-size: 16px !important;
+  font-size: var(--font-md) !important;
 }
 .btn-outline-primary:hover{
-   background-color: #009bfc !important;
-   color: #ffff;
+   background-color: var(--hover-color) !important;
+   color: var(--text-light) !important;
 }
 .social-icon a{
   /* padding: 1rem !important; */
@@ -209,31 +209,31 @@ tbody tr td{
 }
 
 .page-list li.active {
-  color: #242424;
-  font-weight: 700;
+  color: var(--primary-color);
+  font-weight: var(--font-bold);
 }
 .card-img-top{
   height: 100%;
 } 
 /* Chevron icon */
 .icon-right i {
-  font-size: 14px;
-  color: #6c757d;
+  font-size:var(--font-sm);
+  color: var(--des-color);
 }
 
 /* Heading style */
 .title {
   font-size: 4.2rem;
-  font-weight: 800;
-  color: #1c1c1c;
+  font-weight: var(--font-xbold);
+  color: var(--primary-color);
   margin: 20px 0px;
 }
 
 /* Description */
 .description {
-  font-size: 18px;
+  font-size: var(--font-lg);
   line-height: 1.7;
-  color: #444;
+  color: var(--secondary-color);
   margin-bottom: 30px;
 }
 
@@ -249,22 +249,22 @@ tbody tr td{
 .rbt-meta li {
   display: flex;
   align-items: center;
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
+  font-size: var(--font-md);
+  font-weight: var(--font-regular);
+  color: var(--secondary-color);
 }
 
 .rbt-meta li i {
   margin-right: 8px;
-  font-size: 18px;
+  font-size: var(--font-lg);
 }
 .btn-outline-primary:active {
   background-color: transparent !important;
 
 }
 .btn-outline-primary{
-  font-size: 14px;
-  font-weight: 700;
+  font-size: var(--font-sm);
+  font-weight: var(--font-bold);
 }
 
  @media (max-width: 1200px){

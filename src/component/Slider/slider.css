@@ -5,33 +5,34 @@
   margin: 0 auto;
   /* padding: 2rem 0; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin-top: 1.5rem;
-  border-radius: 15px;
+  margin-top: var(--font-xl);
+  border-radius: var(--radius-ll);
 }
 .Slide-head{
   
-  margin-top: 2rem;
+  margin-top: var(--space-xl);
   
 }
 .Slide-head h2{
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
-  color: #242424;
+  font-size: var(--font-3xl) !important;
+  font-weight: var(--font-xbold) !important;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 .slide-image {
   width: 100%;
   aspect-ratio: 2 / 1; /* keeps 1095:550 proportion */
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   background-size: cover;
   background-position: center;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-ml);
 }
 .slide-image img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   object-fit: cover;
 }
 
@@ -46,8 +47,8 @@
   color: white;
   /* background: rgba(0,0,0,0.5); */
   padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-semibold);
 }
 @media(max-width:1000px){
   .slider-container{
@@ -58,12 +59,12 @@
 }
 @media (max-width: 768px) {
   .slider-container {
-    padding: 1rem 0;
+    padding: var(----space-md) 0;
     /* max-width: 700px; */
   }
 
   .Slide-head h2 {
-    font-size: 1.8rem !important;
+    font-size: var(--font-2xl) !important;
   }
 
   /* .slide-image {
@@ -71,7 +72,7 @@
   } */
 
   .slide-caption {
-    font-size: 0.9rem;
+    font-size: var(--font-md);
     gap: 0.5rem;
     padding: 0.4rem 0.8rem;
   }
@@ -82,7 +83,7 @@
 /* -------------------------- */
 @media (max-width: 480px) {
   .Slide-head h2 {
-    font-size: 1.5rem !important;
+    font-size: var(--font-xl) !important;
   }
 
   .slide-image {
@@ -90,13 +91,13 @@
   }
 
   .slide-caption {
-    font-size: 0.8rem;
+    font-size: var(--font-md);
     /* flex-direction: column; */
     align-items: flex-start;
     gap: 0.3rem;
   }
   .slide-caption button{
-    padding: 4px !important;
+    padding: var(--space-xxs) !important;
   
   }
 }
