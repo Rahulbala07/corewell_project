@@ -160,6 +160,10 @@
         .hero-image-logo:hover {
             transform: scale(1.02);
         }
+        .hero-image{
+            padding: 1rem;
+            width: 100%;
+        }
 
         /* Decorative elements */
         .hero-right::before {

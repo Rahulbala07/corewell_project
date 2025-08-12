@@ -163,6 +163,7 @@
 	padding: 0.4rem var(--space-md) !important;
 	width: 100%;
 	white-space: nowrap;
+	
 }
 
 .dropdown-menu a {
@@ -176,8 +177,8 @@
 }
 
 .dropdown-menu a:hover {
-	background: var(--background-hover);
-	color: var(--hover-color);
+	background: var(--background-hover) !important;
+	color: var(--hover-color) !important;
 }
 
 /* ==================== Join Button ==================== */

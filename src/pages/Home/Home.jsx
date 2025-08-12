@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './home.css';
 import { FaPlay } from 'react-icons/fa6';
 import WhyChooseUs from '../../component/Choose/Choose';
 import Slider from '../../component/Slider/Slider';
 import Team from '../../component/Team/Team';
+import InformationForm from '../../component/information_form/Informationform';
+import PopupForm from '../../component/information_form/Informationform';
 
 function Home() {
+
+ const [isPopupOpen, setIsPopupOpen] = useState(false); 
   return (
+    <>
     <div className="parent-home" >
        <div className="hero-container">
 
@@ -51,7 +56,7 @@ function Home() {
                 </div> */}
 
                 <div className="hero-buttons">
-                    <button className="enroll-btn">
+                    <button className="enroll-btn" onClick={() => setIsPopupOpen(true)}>
                         Enroll Now
                         <span style={{"margin-left": "0.5rem"}}>▶</span>
                     </button>
@@ -76,7 +81,13 @@ function Home() {
       <div className='Team-container'>
       <Team/>
       </div>
+      
     </div>
+    {isPopupOpen && <PopupForm onClose={() => setIsPopupOpen(false)} />}
+      </>
+
+
+    
   );
 }
 

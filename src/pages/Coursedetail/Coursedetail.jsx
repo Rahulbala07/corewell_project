@@ -5,6 +5,7 @@ import courseData from '../../data/coursedata.json';
 import './coursedetails.css';
 import { useRef,useEffect } from 'react';
 import Button from '../../component/Button/Button';
+import PopupForm from '../../component/information_form/Informationform';
 
 const CourseDetailsPage = () => {
   const { title } = useParams();
@@ -14,6 +15,7 @@ const CourseDetailsPage = () => {
   const [activeAccordion, setActiveAccordion] = useState('');
   const [activeTab, setisactiveTab] = useState('overview');
   const [showAll, setShowAll] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
     const overviewRef = useRef(null);
   const courseContentRef = useRef(null);
     useEffect(() => {
@@ -193,6 +195,7 @@ const CourseDetailsPage = () => {
 								className="submit_bt"
 								text="Enroll now"
 								shape="square"
+                onClick={() => setIsPopupOpen(true)}
 							/>
                   <a href="/focus-contact" className="btn btn-outline-primary">Contact Us <i className="fas fa-arrow-right ms-2"></i></a>
                 </div>
@@ -243,6 +246,7 @@ const CourseDetailsPage = () => {
           </div>
 
         </div>
+        {isPopupOpen && <PopupForm onClose={() => setIsPopupOpen(false)} Register={course.abb}/>}
       </div>
     </>
   );

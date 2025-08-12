@@ -107,7 +107,7 @@
 }
 
 .description-text {
-  color: #6c757d;
+  color: var(--des-color);
   font-size: var(--font-lg);
   line-height: 1.6;
   margin-bottom: var(--space-xl);
@@ -138,7 +138,7 @@
 }
 
 .reason-text {
-  color: #495057;
+  color: var(--secondary-color);
   font-weight: var(--font-medium);
   font-size: var(--font-lg);
   margin: 0;

@@ -14,6 +14,9 @@ import Course from './pages/Course/Course';
 import CourseDetailsPage from './pages/Coursedetail/Coursedetail';
 import About from './pages/About/About';
 import ScrollTopButton from './component/Scrollindicator/ScrollIndicator';
+import ScrollToTop from './component/Scrolltop';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 		useEffect(() => {
@@ -24,6 +27,7 @@ function App() {
 	}, []);
   return (
     <BrowserRouter>
+	<ScrollToTop />
 			<Routes>
         <Route
 					path="/*"
@@ -51,6 +55,7 @@ function App() {
         <i className="fab fa-whatsapp"></i>
       </a>
 	  <ScrollTopButton/>
+	  <ToastContainer position="top-right" autoClose={3000} />
 	
 							<Footer />
 						</>

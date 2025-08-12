@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 import "./header.css"; // Assuming you have a CSS file for styling
+import PopupForm from '../information_form/Informationform';
 function Header() {
    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
    const [isMobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
 	const toggleMobileMenu = () => {
 		setMobileMenuOpen(!isMobileMenuOpen);
@@ -57,9 +59,8 @@ function Header() {
     ADMISSION <i className="arrow-icon fa-solid fa-chevron-down"></i>
   </span>
   <ul className="dropdown-menu">
-    <li><NavLink to="/admission/process">How do Join</NavLink></li>
-    <li><NavLink to="/admission/eligibility">Enroll now</NavLink></li>
-    <li><NavLink to="/admission/fees">Refer a Friend</NavLink></li>
+    <li ><a onClick={() => setIsPopupOpen(true)}>How do Join</a></li>
+    <li><a href="https://wa.me/">Enroll now</a></li>
   </ul>
 </li>
 
@@ -72,13 +73,14 @@ function Header() {
 				</div>
 
 					<>
-						<NavLink to="/add_property">
+						
 							<Button
 								className="submit_bt"
 								text="Join Now"
 								shape="square"
+								onClick={() => setIsPopupOpen(true)}
 							/>
-						</NavLink>
+						
 						
 					</>
 				
@@ -110,9 +112,9 @@ function Header() {
 						</div>
 						
 							<ul className={`mobile-dropdownmenu ${isMobileDropdownOpen ? 'open' : ''}`}>
-								<li><NavLink to="/admission/process">How do Join</NavLink></li>
+								<li><a onClick={() => setIsPopupOpen(true)}>How do Join</a></li>
 								<li><NavLink to="/admission/eligibility">Enroll now</NavLink></li>
-								<li><NavLink to="/admission/fees">Refer a Friend</NavLink></li>
+								
 							</ul>
 						
 					</li>
@@ -136,6 +138,8 @@ function Header() {
 					
 				</div>
 			</div>
+			{isPopupOpen && <PopupForm onClose={() => setIsPopupOpen(false)} />}
+				
 		</div>
 	);
 }

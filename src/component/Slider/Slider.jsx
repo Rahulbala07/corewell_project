@@ -5,23 +5,36 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './slider.css';
 import Button from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 const slides = [
   {
     image: "/course-1.png",
-    caption: "Flexible Learning"
+    caption: "Flexible Learning",
+    abb:"BMCT",
   },
   {
     image: "course-2.png",
-    caption: "Expert Mentors"
+    caption: "Expert Mentors",
+    abb:"CPC"
   },
   {
     image: "/course-3.png",
-    caption: "Interactive Projects"
+    caption: "Interactive Projects",
+    abb:"AMCT"
   }
 ];
 
+
 const Slider = () => {
+  const navigate=useNavigate()
+function hadlenavigate() {
+  window.location.href="https://wa.me/"
+}
+function handleLearnMore(title) {
+  console.log(title)
+  navigate(`/detail/${title}`)
+}
   return (
     <>
     <div className='Slide-head'>
@@ -44,8 +57,8 @@ const Slider = () => {
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className="slide-caption">
-                <Button className="submit_bt" text="Learn more" shape="square"/>
-                <Button className="submit_bt" text="Enquire Now" shape="square"/>
+                <Button className="submit_bt" text="Learn more" shape="square" onClick={() => handleLearnMore(slide.abb)}/>
+                <Button className="submit_bt" text="Enquire Now" shape="square" onClick={hadlenavigate}/>
               </div>
             </div>
           </SwiperSlide>

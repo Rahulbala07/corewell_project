@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Users,Eye,ShieldCheck,CheckCircle } from "lucide-react";
 import { FaChalkboardTeacher, FaBuilding, FaGlobe, FaUserTie } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AboutCTA from "./AboutCTA";
 import "./About.css";
 import Button from "../../component/Button/Button";
@@ -24,6 +24,7 @@ const serviceItems = [
 ];
 
 const About = () => {
+  const navigate = useNavigate();
   return (
 <>
 
@@ -137,7 +138,7 @@ const About = () => {
 
       <Button className="submit_bt learnmore"
 								 text='Learn More'
-								shape="square"/>
+								shape="square" onClick={()=>{navigate('/courses')}}/>
     </div>
 
 <div className="col-lg-6">
