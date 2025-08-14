@@ -29,7 +29,7 @@ const slides = [
 const Slider = () => {
   const navigate=useNavigate()
 function hadlenavigate() {
-  window.location.href="https://wa.me/"
+  window.location.href="https://wa.me/9629645951"
 }
 function handleLearnMore(title) {
   console.log(title)

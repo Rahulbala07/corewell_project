@@ -78,9 +78,9 @@ function Home() {
       <div className="hero-image" data-aos="fade-left" data-aos-duration="2000">
       <WhyChooseUs/>
       </div>
-      <div className='Team-container'>
+      {/* <div className='Team-container'>
       <Team/>
-      </div>
+      </div> */}
       
     </div>
     {isPopupOpen && <PopupForm onClose={() => setIsPopupOpen(false)} />}

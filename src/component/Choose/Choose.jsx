@@ -2,6 +2,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import "./choose.css";
+import { useNavigate } from "react-router-dom";
 
 const stats = [
   { label: "Certified Students", value: 10000, suffix: "+" ,icon:"/image.png"},
@@ -17,7 +18,9 @@ const reasons = [
   "Online Learning Training"
 ];
 
+
 function WhyChooseUs() {
+  const navigate = useNavigate();
   return (
     <section className="why-choose-section">
       <div className="why-choose-container">
@@ -75,7 +78,7 @@ function WhyChooseUs() {
                 </div>
 
                 {/* CTA Button */}
-                <button className="btn cta-button">
+                <button className="btn cta-button" onClick={()=>navigate('/career')}>
                   Get Started Today
                 </button>
               </div>

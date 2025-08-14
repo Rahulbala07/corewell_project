@@ -197,7 +197,7 @@ const CourseDetailsPage = () => {
 								shape="square"
                 onClick={() => setIsPopupOpen(true)}
 							/>
-                  <a href="/focus-contact" className="btn btn-outline-primary">Contact Us <i className="fas fa-arrow-right ms-2"></i></a>
+                  <a href="https://wa.me/9629645951" className="btn btn-outline-primary">Contact Us <i className="fas fa-arrow-right ms-2"></i></a>
                 </div>
                 <h6 className="text-muted mb-3"><i className="fas fa-rotate-ccw me-2"></i>{course.title}</h6>
 

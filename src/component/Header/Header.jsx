@@ -55,17 +55,17 @@ function Header() {
 							</NavLink>
 						</li>
 						<li className="dropdown">
-  <span className="dropdown-toggle">
-    ADMISSION <i className="arrow-icon fa-solid fa-chevron-down"></i>
-  </span>
-  <ul className="dropdown-menu">
-    <li ><a onClick={() => setIsPopupOpen(true)}>How do Join</a></li>
-    <li><a href="https://wa.me/">Enroll now</a></li>
-  </ul>
-</li>
+								<span className="dropdown-toggle">
+									ADMISSION <i className="arrow-icon fa-solid fa-chevron-down"></i>
+								</span>
+								<ul className="dropdown-menu">
+									<li ><a onClick={() => setIsPopupOpen(true)}>How do Join</a></li>
+									<li><a href="https://wa.me/9629645951">Enroll now</a></li>
+								</ul>
+								</li>
 
 						<li>
-							<NavLink to="/contact" activeClassName="active">
+							<NavLink to="/career" activeClassName="active">
 								CAREER
 							</NavLink>
 						</li>
@@ -112,14 +112,14 @@ function Header() {
 						</div>
 						
 							<ul className={`mobile-dropdownmenu ${isMobileDropdownOpen ? 'open' : ''}`}>
-								<li><a onClick={() => setIsPopupOpen(true)}>How do Join</a></li>
-								<li><NavLink to="/admission/eligibility">Enroll now</NavLink></li>
+								<li ><a onClick={() => setIsPopupOpen(true)}>How do Join</a></li>
+								<li><a href="https://wa.me/9629645951">Enroll now</a></li>
 								
 							</ul>
 						
 					</li>
 					<li>
-						<NavLink to="/contact" activeClassName="active">
+						<NavLink to="/career" activeClassName="active">
 							CAREER
 						</NavLink>
 					</li>
@@ -127,13 +127,12 @@ function Header() {
 				<div className="mob_login">
 					
 						<div className="mobile_submit">
-							<NavLink to="/add_property">
-								<Button
-									className="submit_bt_mobile"
-									text="Join Now"
-									shape="square"
-								/>
-							</NavLink>
+							<Button
+								className="submit_bt"
+								text="Join Now"
+								shape="square"
+								onClick={() => setIsPopupOpen(true)}
+							/>
 						</div>
 					
 				</div>

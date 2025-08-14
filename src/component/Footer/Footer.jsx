@@ -21,9 +21,9 @@ function Footer() {
 						<a href="#"><FaLinkedinIn /></a>
 					</div>
                 <button className="contact-btn">
-                    <span className="text-wrapper">
+                    <span className="text-wrapper" onClick={() => window.open("https://wa.me/9629645951", "_blank", "noopener,noreferrer")}>
                         <span className="arrow before"><FaArrowRightLong /></span>
-                        <span className="text">Contact With Us</span>
+                        <span className="text" >Contact With Us</span>
                         <span className="arrow after"><FaArrowRightLong /></span>
                     </span>
                     </button>

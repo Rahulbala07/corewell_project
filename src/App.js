@@ -17,6 +17,7 @@ import ScrollTopButton from './component/Scrollindicator/ScrollIndicator';
 import ScrollToTop from './component/Scrolltop';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CareerPage from './pages/Career/Career';
 
 function App() {
 		useEffect(() => {
@@ -39,14 +40,13 @@ function App() {
 								<Route path="/detail/:title" element={<CourseDetailsPage/>} />
 								<Route path="/courses" element={<Course />} />
 								<Route path="/about" element={<About />} />
-								{/* <Route path="/agent" element={<Agent />} />
-								<Route path="/contact" element={<Contact />} /> */ }
-								
+								{/* /* <Route path="/agent" element={<Agent />} /> */}
+								<Route path="/career" element={<CareerPage />} /> 								
 							</Routes>
 
 
 							      <a
-        href="https://wa.me/"
+        href="https://wa.me/9629645951"
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
