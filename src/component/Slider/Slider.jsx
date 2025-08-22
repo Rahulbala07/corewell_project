@@ -38,7 +38,7 @@ function handleLearnMore(title) {
   return (
     <>
     <div className='Slide-head'>
-      <h2>Our Courses</h2>
+      <h2 className='gradient-text'>Our Courses</h2>
     </div>
     <div className="slider-container">
       <Swiper

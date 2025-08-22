@@ -76,3 +76,9 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .submit_bt span{
+    font-size: var(--font-xs) !important;
+  }
+}

@@ -47,7 +47,7 @@
 
         .ribbon-banner {
             display: inline-block;
-            background: linear-gradient(45deg, #f59e0b, #f97316);
+            background: linear-gradient(45deg, #ecad42, #ee6d13);
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
@@ -75,16 +75,16 @@
             color: #1e293b;
         }
 
-        .gradient-text {
+        /* .gradient-text {
             background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-        }
+        } */
 
-        .description {
+        .home-description {
             font-size: 1.1rem;
-            color:var(--des-color);
+            color:#aa7c7c;
             margin-bottom: 2.5rem;
             line-height: 1.7;
             /* max-width: 600px; */
@@ -151,7 +151,7 @@
         .hero-image-logo {
             width:400px;
             height: 400px;
-            
+                object-fit: cover;
             border-radius: 50%;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;

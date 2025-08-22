@@ -32,7 +32,7 @@ function Home() {
                     <span className="gradient-text">Medical Coding Education</span>
                 </h1>
 
-                <p className="description">
+                <p className="home-description">
                     Gain in-demand skills through expert-led, interactive training designed for real-world success.
                     Our comprehensive online medical coding programs combine live mentorship, hands-on learning,
                     and globally recognized certifications to help you advance confidently in the healthcare industry.

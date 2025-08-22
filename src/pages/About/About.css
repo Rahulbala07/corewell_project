@@ -512,6 +512,10 @@
             .metrics-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
+                padding: 0px !important;
+            }
+            .whatsapp-form{
+              flex-direction: column;
             }
             
             .metrics-grid h3 {

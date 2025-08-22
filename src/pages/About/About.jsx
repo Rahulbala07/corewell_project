@@ -58,7 +58,7 @@ const About = () => {
             {
               icon: "/award.png",
               title: "Accredited",
-              desc: "AAPC licensed & ISO certified. Recognized by IA&F and IAS.",
+              desc: "AAPC licensed ISO certified. Recognized by IA&F.",
             },
             {
               icon: "/stakeholder.png",
