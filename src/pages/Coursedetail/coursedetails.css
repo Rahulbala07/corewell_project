@@ -282,6 +282,13 @@ tbody tr td{
   .card-img-top{
     height: 100% !important;
   }
+  .badge{
+    word-wrap: break-word;
+     display: inline-block;
+     white-space: normal;
+  
+  
+  }
 
   
 }
