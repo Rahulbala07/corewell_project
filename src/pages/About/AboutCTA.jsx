@@ -22,7 +22,7 @@ const AboutCTA = () => {
   if (!isVisible) return null;
 
   return (
-    <div style={styles.card}>
+    <div style={styles.card} className="about-cta-card">
       <h3 style={styles.text}>
         Looking for a career in <span style={styles.highlight}>Medical Coding Career</span>
       </h3>
@@ -56,6 +56,7 @@ const styles = {
     fontSize: "1rem",
     fontWeight: "600",
     margin: 0,
+    textAlign: "center",
   },
   highlight: {
     color: "#ffffff",

@@ -23,6 +23,9 @@
   align-content: center;
   justify-content: center;
   height: 700px;
+    background-size: cover;    /* ensures image covers container */
+  background-position: center; /* keeps image centered */
+  background-repeat: no-repeat; 
   color: var(--text-light);
   text-align: center;
   margin-bottom: var(--space-xl);
@@ -503,10 +506,23 @@
                 gap: 12px;
                 padding: 20px;
             } */
-            
+            .values-grid{
+                grid-template-columns: 1fr !important;
+                gap: 40px;
+            }
+            .thumbnail-wrapper .thumbnail.image-1{
+              left:0px !important;
+            }
             .trust-indicators {
                 flex-direction: column;
                 gap: 15px;
+            }
+            .about-cta-card{
+              justify-content: center !important  ;
+              gap:10px !important;
+            }
+            .about-description{
+              padding: 0px 10px !important
             }
             
             .metrics-grid {
@@ -556,10 +572,11 @@
       border-radius: var(--radius-md);
 }
 
+
 .subscribe-form input {
 
   border: none !important;
-  min-width: 240px;
+  min-width: 200px;
   font-size: var(--font-md);
   color:#6b7385;
   font-weight: var(--font-medium);
@@ -575,12 +592,26 @@
 .subscribe-form button:hover {
   background-color: #1e40af;
 }
-
+@media (max-width:380px){
+ .whatsapp-form input{
+width: 200px;
+font-size: var(--font-sm);
+}
+.left-about{
+  padding-right: 0px !important;
+}
+.section-heading{
+  font-size: var(--font-3xl) !important;
+}
+}
 /* Responsive */
 @media (max-width: 992px) {
   .about-cards {
     flex-direction: column;
     align-items: center;
+  }
+  .service-section{
+    padding: 30px 0px !important;
   }
 
   .about-card {

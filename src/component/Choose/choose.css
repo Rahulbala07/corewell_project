@@ -209,6 +209,12 @@
   color: #299ee7;
   font-weight: bold;
 }
+@media (max-width:768px){
+ 
+  .stat-box h2{
+    font-size: var(--font-xl) !important;
+  }
+}
 
 /* === Responsive === */
 @media (max-width: 991px) {

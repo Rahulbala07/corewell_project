@@ -249,7 +249,7 @@ const About = () => {
             <h3>Ready to Get Started</h3>
             <p>Join thousands of learners and future-proof your career today.</p>
           </div>
-          <div className="subscribe-form">
+          <div className="whatsapp-form">
             <input type="email" placeholder="Enter your email..." />
              <button className="contact-btn send-feedback">
                                 <span className="text-wrapper">
