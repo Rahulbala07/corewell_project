@@ -91,17 +91,17 @@ function Header() {
 			<div className={`mobile_header ${isMobileMenuOpen ? "open" : ""}`}>
 				<ul>
 					<li>
-						<NavLink to="/" activeClassName="active">
+						<NavLink to="/" activeClassName="active" onClick={() => setMobileMenuOpen(false)}>
 							HOME
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/about" activeClassName="active">
+						<NavLink to="/about" activeClassName="active" onClick={() => setMobileMenuOpen(false)}>
 							ABOUT
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/courses" activeClassName="active">
+						<NavLink to="/courses" activeClassName="active" onClick={() => setMobileMenuOpen(false)}>
 							COURSES
 						</NavLink>
 					</li>
@@ -112,8 +112,8 @@ function Header() {
 						</div>
 						
 							<ul className={`mobile-dropdownmenu ${isMobileDropdownOpen ? 'open' : ''}`}>
-								<li ><a onClick={() => setIsPopupOpen(true)}>How do Join</a></li>
-								<li><a href="https://wa.me/9629645951">Enroll now</a></li>
+								<li ><a onClick={() => { setIsPopupOpen(true); setMobileMenuOpen(false); }}>How do Join</a></li>
+								<li><a href="https://wa.me/9629645951" onClick={() => setMobileMenuOpen(false)}>Enroll now</a></li>
 								
 							</ul>
 						

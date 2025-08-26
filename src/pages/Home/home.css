@@ -322,15 +322,27 @@
 
             .hero-buttons {
                 flex-direction: column;
-                width: 100%;
+                width: 80%;
+                align-items: center;
             }
 
             .enroll-btn, .download-btn {
                 width: 100%;
                 justify-content: center;
             }
+          
 
             .stats-container {
                 flex-direction: column;
             }
+        }
+        @media (max-width: 480px) {
+            
+
+            .hero-image-logo {
+                width: 300px;
+                height: 300px;
+            }
+
+           
         }

@@ -26,9 +26,12 @@ const AboutCTA = () => {
       <h3 style={styles.text}>
         Looking for a career in <span style={styles.highlight}>Medical Coding Career</span>
       </h3>
-      <Link to="/contact" style={styles.button}>
+      <a  href="https://wa.me/9629645951"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp" style={styles.button}>
         Contact Us
-      </Link>
+      </a>
     </div>
   );
 };

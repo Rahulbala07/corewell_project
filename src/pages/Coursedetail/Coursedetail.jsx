@@ -70,7 +70,7 @@ const CourseDetailsPage = () => {
                   <li><div className="icon-right"><i className="fas fa-chevron-right"></i></div></li>
                   <li className="rbt-breadcrumb-item active">{course.abb.toUpperCase()}</li>
                 </ul>
-                  <h2 className="title">Basic Medical Coding Training (BMCT)</h2>
+                  <h2 className="title">{course.name} <span>({course.abb.toUpperCase()})</span></h2>
                 <p className="description">{course.description}</p>
                 <ul className="rbt-meta">
                   {course.tags?.map((tag, i) => (

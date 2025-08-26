@@ -5,9 +5,12 @@ import { FaChalkboardTeacher, FaBuilding, FaGlobe, FaUserTie } from "react-icons
 import { Link, useNavigate } from "react-router-dom";
 import AboutCTA from "./AboutCTA";
 import "./About.css";
+import { toast } from "react-toastify";
 import Button from "../../component/Button/Button";
 import { FaArrowRightLong } from "react-icons/fa6";
 import TrainingPlacementSection from "../../component/training/Training";
+import { useState } from "react";
+import axios from "axios";
 
 const coreValues = [
   { title: "Collaboration",icon:<Users className="icon" />, desc: "We grow together through teamwork and shared success." },
@@ -25,6 +28,43 @@ const serviceItems = [
 
 const About = () => {
   const navigate = useNavigate();
+   const [number, setNumber] = useState("");
+   const [email, setemail] = useState("");
+     const [loading, setLoading] = useState(false);
+  async function sendDetails({ email, phone }) {
+    if (loading) return;  
+
+  if (!email && !phone) {
+    toast.error("❌ Please provide an email or phone number.");
+    return;
+  }
+  if (phone && phone.length !== 10) {
+    toast.error("❌ Please enter a valid 10-digit WhatsApp number.");
+    return;
+  }
+setLoading(true);
+  try {
+    const response = await axios.post("http://localhost:8888/quick-contact", {
+      email,
+      phone,
+    });
+
+    if (response.status === 200) {
+      if (email) {
+        toast.success("Email submitted successfully!");
+      } else if (phone) {
+        toast.success("Phone number submitted successfully!");
+      }
+    } else {
+      toast.error("Failed to submit details.");
+    }
+  } catch (error) {
+    console.error("Error submitting details:", error);
+    toast.error("Something went wrong. Please try again.");
+  }finally {
+      setLoading(false);
+    }
+}
   return (
 <>
 
@@ -186,11 +226,14 @@ const About = () => {
           <h2 className="section-heading">Get the Latest Updates</h2>
           <p className="section-subtext">Stay informed about our courses, training opportunities, and success stories.</p>
           <div className="whatsapp-form">
-            <input type="text" placeholder="Enter Your WhatsApp Number" />
-                <button className="contact-btn send-feedback">
+            <input type="tel" id="whatsappNumber"
+              placeholder="Enter Your WhatsApp Number" 
+              maxlength="10" 
+              pattern="[0-9]{10}" onChange={(e) => setNumber(e.target.value)} />
+                <button className="contact-btn send-feedback" disabled={loading}>
                                 <span className="text-wrapper">
                                     <span className="arrow before"><FaArrowRightLong /></span>
-                                    <span className="text">Submit</span>
+                                    <span className="text" onClick={() => sendDetails({ phone: number })}>{loading ? "Submitting..." : "Submit"}</span>
                                     <span className="arrow after"><FaArrowRightLong /></span>
                                 </span>
               </button>
@@ -250,11 +293,11 @@ const About = () => {
             <p>Join thousands of learners and future-proof your career today.</p>
           </div>
           <div className="whatsapp-form">
-            <input type="email" placeholder="Enter your email..." />
-             <button className="contact-btn send-feedback">
+            <input type="email" placeholder="Enter your email..."onChange={(e) => setemail(e.target.value)}/>
+             <button className="contact-btn send-feedback" disabled={loading}>
                                 <span className="text-wrapper">
                                     <span className="arrow before"><FaArrowRightLong /></span>
-                                    <span className="text">Submit</span>
+                                    <span className="text" onClick={() => sendDetails({ email: email })}>{loading ? "Submitting..." : "Submit"}</span>
                                     <span className="arrow after"><FaArrowRightLong /></span>
                                 </span>
               </button>

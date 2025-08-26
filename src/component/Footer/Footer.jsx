@@ -38,8 +38,6 @@ function Footer() {
 						<li><a href="#">Contact Us</a></li>
 						<li><a href="#">Course</a></li>
 						<li><a href="#">Career</a></li>
-						<li><a href="#">Student Login</a></li>
-						<li><a href="#">Privacy Policy</a></li>
 					</ul>
 				</div>
 
@@ -64,7 +62,7 @@ function Footer() {
             <hr/>
             <div>
                 <p className="footer-text">
-                    &copy; {new Date().getFullYear()} Focus Healthcare Solutions. Designed By Brand It Now
+                    &copy; {new Date().getFullYear()} Corewell Healthcare Solutions. Designed By Brand It Now
                     </p>
             </div>
 		</footer>
