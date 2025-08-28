@@ -498,7 +498,14 @@
         .metrics-grid > div:nth-child(2) {
             animation: float 6s ease-in-out infinite 3s;
         }
-
+  @media (max-width: 950px) {
+            .thumbnail-wrapper{
+              justify-content: space-around;
+            }
+            .thumbnail-wrapper .thumbnail.image-1 {
+              left:0px !important;
+            }
+        }
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             /* .whatsapp-form {
@@ -506,12 +513,23 @@
                 gap: 12px;
                 padding: 20px;
             } */
+             .thumbnail-wrapper{
+              align-items: center;
+              justify-content: center;
+             }
+             .thumbnail-wrapper .thumbnail.image-1 img {
+                max-height: 350px;
+                width: 100%;
+             }
             .values-grid{
                 grid-template-columns: 1fr !important;
                 gap: 40px;
             }
             .thumbnail-wrapper .thumbnail.image-1{
               left:0px !important;
+            }
+            .about-section{
+         padding: 80px 20px 0px 20px;
             }
             .trust-indicators {
                 flex-direction: column;
