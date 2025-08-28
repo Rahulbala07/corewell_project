@@ -44,7 +44,7 @@ function Footer() {
 				<div className="footer-section office">
 					<h3>Head Office</h3>
 					<p><strong>Phone:</strong> +91 9150851067</p>
-					<p><strong>Area:</strong> 1/530, 1st floor, OMR Road, Thoraipakkam, Chennai - 600097</p>
+					<p><strong>Area:</strong> RTO office near,Sholinganallur,Chennai-600119</p>
 				</div>
 
 				<div className="footer-section office">
@@ -56,7 +56,7 @@ function Footer() {
 				<div className="footer-section office">
 					<h3>Branch Office</h3>
 					<p><strong>Phone:</strong> +91 9597055202</p>
-					<p><strong>Area:</strong> 6/51/A14, 4th Floor, Amosons Complex, Trivandrum Main Road, Marthandam, Kanyakumari - 629165</p>
+					
 				</div>
 			</div>
             <hr/>

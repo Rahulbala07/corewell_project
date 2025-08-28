@@ -10,6 +10,15 @@ import PopupForm from '../../component/information_form/Informationform';
 function Home() {
 
  const [isPopupOpen, setIsPopupOpen] = useState(false); 
+ const handleDownload = () => {
+    const pdfUrl = "/Cluster_WorkerThreads_WorkerPool_Presentation.pdf"; 
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "downloaded-file.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
     <div className="parent-home" >
@@ -60,7 +69,7 @@ function Home() {
                         Enroll Now
                         <span style={{"margin-left": "0.5rem"}}>▶</span>
                     </button>
-                    <button className="download-btn">Download Brochure</button>
+                    <button className="download-btn" onClick={handleDownload}>Download Brochure</button>
                 </div>
 
                 <img

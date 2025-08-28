@@ -117,6 +117,7 @@ const CourseAccordion = ({ activeAccordion, toggleAccordion, accordionData }) =>
             <div 
               className={`accordion-collapse collapse ${activeAccordion === section.id ? 'show' : ''}`}
               ref={el => contentRefs.current[section.id] = el}
+              style={{ height: activeAccordion === section.id ? 'max-content' : '0px' }}
             >
               <div className="accordion-body">
                 {section.type === 'text' ? (
@@ -127,7 +128,7 @@ const CourseAccordion = ({ activeAccordion, toggleAccordion, accordionData }) =>
                 ) : (
                   <ul className="list-unstyled">
                     {section.content.map((item, i) => (
-                      <li key={i} className="mb-2">
+                      <li key={i} className="mb-2 accordian-list-item">
                         {section.icon && <i className={`${section.icon} me-2`}></i>}
                         {item}
                       </li>
