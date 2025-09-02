@@ -2,6 +2,7 @@ import React from 'react';
 import './footer.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowRightLong } from "react-icons/fa6";
+import MyMap from '../map/Map';
 
 
 function Footer() {
@@ -46,19 +47,9 @@ function Footer() {
 					<p><strong>Phone:</strong> +91 9150851067</p>
 					<p><strong>Area:</strong> RTO office near,Sholinganallur,Chennai-600119</p>
 				</div>
-
-				<div className="footer-section office">
-					<h3>Branch Office</h3>
-					<p><strong>Phone:</strong> +91 9363939377</p>
-					<p><strong>Area:</strong> #154, GRD Towers, 2nd Floor, AA Block 3rd Avenue, Anna Nagar, Chennai - 600040</p>
-				</div>
-
-				<div className="footer-section office">
-					<h3>Branch Office</h3>
-					<p><strong>Phone:</strong> +91 9597055202</p>
-					
-				</div>
+				<MyMap/>
 			</div>
+
             <hr/>
             <div>
                 <p className="footer-text">

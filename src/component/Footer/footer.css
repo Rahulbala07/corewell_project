@@ -16,6 +16,7 @@
 	flex: 1 1 200px;
 	margin: var(--space-md);
 	min-width: 200px;
+  max-width: 400px;
 }
 
 .footer-logo {
@@ -94,7 +95,11 @@
   border-radius: var( --space-xss) !important;
   margin-top: 0px !important;
 }
-
+.office,.links{
+  flex: 1 0.5 0px !important;
+ min-width: 100px !important;
+ max-width: 120px !important;
+}
 
 .text-wrapper {
   display: inline-flex;
