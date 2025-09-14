@@ -297,6 +297,11 @@ tbody tr td{
     padding: 0px !important;
     }
   }
+  @media (max-width:420px){
+    .title{
+      font-size: 3.5rem !important;
+    }
+  }
 
   
 }
