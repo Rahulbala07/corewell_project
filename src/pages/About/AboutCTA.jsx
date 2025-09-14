@@ -51,7 +51,7 @@ const styles = {
     bottom: "20px",
     left: "50%",
     transform: "translateX(-50%)",
-    zIndex: 1000,
+    // zIndex: 1000,
     boxShadow: "0px 4px 12px rgba(0,0,0,0.3)",
     width:"80%",
   },

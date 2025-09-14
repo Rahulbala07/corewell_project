@@ -61,7 +61,7 @@ const PopupForm = ({ onClose, Register = "Register" }) => {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:8888/submit-form", {
+      await axios.post("https://corewell-backend.onrender.com/submit-form", {
         ...formData,
         course: Register,
       });

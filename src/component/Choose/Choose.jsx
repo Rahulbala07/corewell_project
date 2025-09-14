@@ -5,10 +5,10 @@ import "./choose.css";
 import { useNavigate } from "react-router-dom";
 
 const stats = [
-  { label: "Certified Students", value: 10000, suffix: "+" ,icon:"/image.png"},
-  { label: "Courses Completed", value: 500, suffix: "+",icon:"/education.png" },
+  { label: "Certified Students", value: 1000, suffix: "+" ,icon:"/image.png"},
+  { label: "Courses Completed", value: 50, suffix: "+",icon:"/education.png" },
   { label: "Placement Rate", value: 100, suffix: "%",icon:"/staffing.png" },
-  { label: "Expert Mentors", value: 25, suffix: "+",icon:"/leadership.png" },
+  { label: "Expert Mentors", value: 15 , suffix: "+",icon:"/leadership.png" },
 ];
 const reasons = [
   "Globally Recognized Certification Programs",

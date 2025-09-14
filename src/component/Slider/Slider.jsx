@@ -16,12 +16,12 @@ const slides = [
   {
     image: "course-2.png",
     caption: "Expert Mentors",
-    abb:"CPC"
+    abb:"AMCT"
   },
   {
     image: "/course-3.png",
     caption: "Interactive Projects",
-    abb:"AMCT"
+    abb:"CPC"
   }
 ];
 

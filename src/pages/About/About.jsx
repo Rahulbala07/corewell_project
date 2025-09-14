@@ -44,7 +44,7 @@ const About = () => {
   }
 setLoading(true);
   try {
-    const response = await axios.post("http://localhost:8888/quick-contact", {
+    const response = await axios.post("https://corewell-backend.onrender.com/quick-contact", {
       email,
       phone,
     });
@@ -256,7 +256,7 @@ setLoading(true);
                     <circle cx="12" cy="12" r="10"/>
                     <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
                 </svg>
-                Trusted by 15,000+
+                Trusted by 150+
             </div>
         </div>
           <div class="metrics-grid">
@@ -266,7 +266,7 @@ setLoading(true);
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                 </div>
-                <h3>10,000+</h3>
+                <h3>10,00+</h3>
                 <p>Successfully Trained<br />Learners & Counting</p>
             </div>
             <div>
@@ -275,7 +275,7 @@ setLoading(true);
                         <path d="M20 6L9 17l-5-5"/>
                     </svg>
                 </div>
-                <h3>5,000+</h3>
+                <h3>5,00+</h3>
                 <p>Students working<br />as Medical Coders</p>
             </div>
         </div>

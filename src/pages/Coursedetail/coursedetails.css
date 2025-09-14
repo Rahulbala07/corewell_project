@@ -293,6 +293,9 @@ tbody tr td{
     .accordian-list-item{
       text-align: left;
     }
+    .course-image{
+    padding: 0px !important;
+    }
   }
 
   
