@@ -11,10 +11,10 @@ function Home() {
 
  const [isPopupOpen, setIsPopupOpen] = useState(false); 
  const handleDownload = () => {
-    const pdfUrl = "/Cluster_WorkerThreads_WorkerPool_Presentation.pdf"; 
+    const pdfUrl = "/COREWELL BROCHURE.pdf"; 
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "downloaded-file.pdf"; 
+    link.download = "COREWELL BROCHURE.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

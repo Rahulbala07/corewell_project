@@ -14,7 +14,7 @@ const courses = [
     title: 'AMCT',
     mode: 'Online Training',
     description: 'This course aims to provide a foundational understanding of medical coding principles while preparing participants for the CPC certification exam administered by the American Academy of Professional Coders (AAPC). It integrates basic coding skills with advanced training required for CPC certification.',
-    image: '/AMCT course.jpg'
+    image: '/AMCT Course.jpg'
   },
   {
     title: 'CPC',

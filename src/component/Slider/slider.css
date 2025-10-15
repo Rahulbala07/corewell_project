@@ -60,8 +60,10 @@
 @media (max-width: 768px) {
   .slider-container {
     padding: var(----space-md) 0;
+    width: 95% !important;
     /* max-width: 700px; */
   }
+  
 
   .Slide-head h2 {
     font-size: var(--font-2xl) !important;

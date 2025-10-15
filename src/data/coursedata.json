@@ -1,21 +1,29 @@
 [
   {
     "name": "Basic Medical Coding Training",
-    "abb":"BMCT",
+    "abb": "BMCT",
     "description": "Medical coding is essential in healthcare because it converts procedures, diagnoses, and services into standardized alphanumeric codes. These codes play critical roles in billing, recordkeeping, research, and ensuring accurate insurance reimbursements",
-  "image": "/course-1.png",
+    "image": "/course-1.png",
     "tags": [
-    { "icon": "fa-solid fa-calendar", "label": "Expert Trainers" },
-    { "icon": "fa-solid fa-globe", "label": "Online Training" },
-    { "icon": "fa-solid fa-award", "label": "Certified Course" }
-  ],
-  "overview":"This course provides essential skills and knowledge to kickstart a career in medical coding. Our meticulously crafted curriculum offers a deep understanding of healthcare coding essentials, preparing you for roles in medical coding departments, healthcare facilities, and insurance companies.",
+      {
+        "icon": "fa-solid fa-calendar",
+        "label": "Expert Trainers"
+      },
+      {
+        "icon": "fa-solid fa-globe",
+        "label": "Online Training"
+      },
+      {
+        "icon": "fa-solid fa-award",
+        "label": "Certified Course"
+      }
+    ],
+    "overview": "This course provides essential skills and knowledge to kickstart a career in medical coding. Our meticulously crafted curriculum offers a deep understanding of healthcare coding essentials, preparing you for roles in medical coding departments, healthcare facilities, and insurance companies.",
     "keyComponents": [
-    "ICD-10-CM",
-    "CPT Coding",
-    "HIPAA Compliance"
-  ],
-
+      "ICD-10-CM",
+      "CPT Coding",
+      "HIPAA Compliance"
+    ],
     "sections": [
       {
         "id": "offerings",
@@ -65,7 +73,7 @@
         "content": [
           "Life science students",
           "Individuals interested in a career as a medical biller and coder",
-          "Practice consultants unfamiliar with the medical billing and coding process"
+          "Healthcare Professionals"
         ]
       },
       {
@@ -77,33 +85,65 @@
       }
     ],
     "details": [
-    { "label": "Weekdays", "value": "1.5 months/2hrs per day" },
-    {"label": "Weekends", "value": "2.5 months/3hrs per day" },
-    {"label":"Learning Mode","value":"Online"},
-    {"label":"Joining Kit","value":"Study Material"},
-    {"label":"Assessments","value":"Chapter Wise Test Every Week"},
-    {"label":"Placement Assistance","value":"100%"},
-    { "label": "Certification", "value": "YES - Provided" },
-    { "label": "Course Fees", "value": "Rs.8000/-"}
-  ]
-
+      {
+        "label": "Weekdays",
+        "value": "1.5 months/2hrs per day"
+      },
+      {
+        "label": "Weekends",
+        "value": "2.5 months/3hrs per day"
+      },
+      {
+        "label": "Learning Mode",
+        "value": "Online"
+      },
+      {
+        "label": "Joining Kit",
+        "value": "Study Material"
+      },
+      {
+        "label": "Assessments",
+        "value": "Chapter Wise Test Every Week"
+      },
+      {
+        "label": "Placement Assistance",
+        "value": "100%"
+      },
+      {
+        "label": "Certification",
+        "value": "YES - Provided"
+      },
+      {
+        "label": "Course Fees",
+        "value": "Rs.8000/-"
+      }
+    ]
   },
   {
     "name": "Certified Professional Coder",
-    "abb":"CPC",
-    "description":"CPC courses are structured to equip individuals with the skills and knowledge required to accurately assign medical codes to diagnoses and procedures for reimbursement purposes in healthcare settings",
+    "abb": "CPC",
+    "description": "CPC courses are structured to equip individuals with the skills and knowledge required to accurately assign medical codes to diagnoses and procedures for reimbursement purposes in healthcare settings",
     "image": "/course-3.png",
     "tags": [
-    { "icon": "fa-solid fa-calendar", "label": "Expert Trainers" },
-    { "icon": "fa-solid fa-globe", "label": "Online Training" },
-    { "icon": "fa-solid fa-award", "label": "Certified Course" }
-  ],
-  "overview":"This course provides essential skills and knowledge to kickstart a career in medical coding. Our meticulously crafted curriculum offers a deep understanding of healthcare coding essentials, preparing you for roles in medical coding departments, healthcare facilities, and insurance companies.",
+      {
+        "icon": "fa-solid fa-calendar",
+        "label": "Expert Trainers"
+      },
+      {
+        "icon": "fa-solid fa-globe",
+        "label": "Online Training"
+      },
+      {
+        "icon": "fa-solid fa-award",
+        "label": "Certified Course"
+      }
+    ],
+    "overview": "Our CPC medical coding course equips you with essential skills and knowledge to launch a successful career in medical coding. Our carefully structured curriculum provides a comprehensive understanding of healthcare coding fundamentals, preparing you for positions in medical coding departments, healthcare facilities, and insurance companies",
     "keyComponents": [
-    "ICD-10-CM",
-    "CPT Coding",
-    "HIPAA Compliance"
-  ],
+      "ICD-10-CM",
+      "CPT Coding",
+      "HIPAA Compliance"
+    ],
     "sections": [
       {
         "id": "offerings",
@@ -118,16 +158,13 @@
         "type": "list",
         "icon": "fas fa-file-text text-primary",
         "content": [
-          "Language of Medicines (Medical Terminology, Anatomy, Physiology, Pathology, Laboratory Techniques, etc.)",
-          "ICD-10-CM Coding Conventions and Chapter specific guidelines",
-          "Introduction to CPT Procedure Coding Terminologies",
-          "HCPCS basic Guidelines and Modifiers",
-          "Introduction on HIPAA rules and guidelines",
-          "HCPCS basic Guidelines and Modifiers concepts",
-          "Introduction to Revenue Cycle Management",
-          "Patient report analysis with sample Medical records",
-          "Final certification exam and Mock Interview",
-          "This course is designed to equip you with comprehensive skills..."
+          "All sections (i.e.) E&M (Evaluation and Management), Surgery, Anesthesia, Radiology, Pathology, Medicine",
+          "ICD-10 CM coding guidelines",
+          "HCPCS Coding guidelines",
+          "Compliance Regulatory",
+          "Anatomy, Physiology and Medical Terminology",
+          "Medical Billings",
+          "CPC medical coding courses offer a structured and comprehensive approach to mastering medical coding principles and preparing for CPC certification. They cater to a diverse audience, providing flexible learning options and practical, hands-on experience to ensure participants are well-equipped for success in medical coding careers"
         ]
       },
       {
@@ -136,13 +173,13 @@
         "type": "list",
         "icon": "fas fa-star text-warning",
         "content": [
-          "12+ Years Experienced Certified Trainers",
+          "Extensive ideas to maintain Time management during Exams for candidates",
           "Free study materials and Manuals",
           "Chapter wise Assessments every week",
           "Final Certification Exam",
           "Mock Interview to Crack Placements",
           "100% Job Placement Assistance",
-          "24/7 Whatsapp Support for Doubt Clarification"
+          "Various Shortcuts to crack the exam in an effective way"
         ]
       },
       {
@@ -151,9 +188,9 @@
         "type": "list",
         "icon": "fas fa-user text-info",
         "content": [
-          "Life science students",
-          "Individuals interested in a career as a medical biller and coder",
-          "Practice consultants unfamiliar with the medical billing and coding process"
+          "Aspiring Medical Coders",
+          "Healthcare Professionals",
+          "Current Coders Seeking Certification and Career Growth"
         ]
       },
       {
@@ -164,40 +201,73 @@
         "content": "1.5 months"
       }
     ],
-     "details": [
-    { "label": "Weekdays", "value": "1.5 months / 2hrs per day" },
-    {"label": "Weekends", "value": "2.5 months / 3hrs per day" },
-    {"label":"Learning Mode","value":"Online"},
-    {"label":"Joining Kit","value":"Study Material"},
-    {"label":"Assessments","value":"Chapter Wise Test Every Week"},
-    {"label":"Placement Assistance","value":"100%"},
-    { "label": "Certification", "value": "YES - Provided" },
-    { "label": "Course Fees", "value": "Rs.8000/-"}
-  ]
+    "details": [
+      {
+        "label": "Weekdays",
+        "value": "1.5 months / 2hrs per day"
+      },
+      {
+        "label": "Weekends",
+        "value": "2.5 months / 3hrs per day"
+      },
+      {
+        "label": "Learning Mode",
+        "value": "Online"
+      },
+      {
+        "label": "Joining Kit",
+        "value": "Study Material"
+      },
+      {
+        "label": "Assessments",
+        "value": "Chapter Wise Test Every Week"
+      },
+      {
+        "label": "Placement Assistance",
+        "value": "100%"
+      },
+      {
+        "label": "Certification",
+        "value": "YES - Provided"
+      },
+      {
+        "label": "Course Fees",
+        "value": "Rs.8000/-"
+      }
+    ]
   },
-   {
+  {
     "name": "Advanced Medical Code Training Program",
-    "abb":"AMCT",
-    "description":"This course aims to provide a foundational understanding of medical coding principles while preparing participants for the CPC certification exam administered by the American Academy of Professional Coders (AAPC). It integrates basic coding skills with advanced training required for CPC certification.",
+    "abb": "AMCT",
+    "description": "Our Advanced Medical Code Training Program is designed to equip students and professionals with in-depth knowledge of medical coding systems.Participants will learn accurate ICD, CPT, and HCPCS coding practices, ensuring compliance with healthcare standards.The program emphasizes practical application, real-world scenarios, and industry best practices.Our goal is to enhance career opportunities by preparing learners for professional certification and success in the medical coding field.",
     "image": "/course-2.png",
     "tags": [
-    { "icon": "fa-solid fa-calendar", "label": "Expert Trainers" },
-    { "icon": "fa-solid fa-globe", "label": "Online Training" },
-    { "icon": "fa-solid fa-award", "label": "Certified Course" }
-  ],
-  "overview":"This course provides foundational skills in medical terminology, anatomy, and basic ICD-10-CM coding, along with advanced training in complex ICD-10-CM and CPT coding, HCPCS Level II coding, and compliance with coding guidelines. You'll also receive thorough preparation for the CPC certification exam, equipping you for roles in medical coding departments, healthcare facilities, and insurance companies",
+      {
+        "icon": "fa-solid fa-calendar",
+        "label": "Expert Trainers"
+      },
+      {
+        "icon": "fa-solid fa-globe",
+        "label": "Online Training"
+      },
+      {
+        "icon": "fa-solid fa-award",
+        "label": "Certified Course"
+      }
+    ],
+    "overview": "This course provides foundational skills in medical terminology, anatomy, and basic ICD-10-CM coding, along with advanced training in complex ICD-10-CM and CPT coding, HCPCS Level II coding, and compliance with coding guidelines. You'll also receive thorough preparation for the CPC certification exam, equipping you for roles in medical coding departments, healthcare facilities, and insurance companies.",
     "keyComponents": [
-    "ICD-10-CM",
-    "CPT Coding",
-    "HIPAA Compliance"
-  ],
+      "ICD-10-CM",
+      "CPT Coding",
+      "HIPAA Compliance"
+    ],
     "sections": [
       {
         "id": "offerings",
         "title": "Course Offerings:",
         "type": "text",
         "icon": "",
-        "content": "Participants in CPC medical coding courses will gain mastery in translating medical diagnoses, procedures, services, and equipment into standardized alphanumeric codes essential for accurate billing, insurance claims processing, and data analysis."
+        "content": "AMCT courses provide a structured and in-depth approach to mastering advanced medical coding principles, preparing participants for specialized certifications and career advancement. Practical, hands-on experience with complex coding scenarios ensures participants gain the skills needed for success in specialized medical coding roles across healthcare facilities and insurance companies."
       },
       {
         "id": "topics",
@@ -207,14 +277,12 @@
         "content": [
           "Language of Medicines (Medical Terminology, Anatomy, Physiology, Pathology, Laboratory Techniques, etc.)",
           "ICD-10-CM Coding Conventions and Chapter specific guidelines",
-          "Introduction to CPT Procedure Coding Terminologies",
+          "Introduction to CPT-4 Procedure Coding and modifiers",
           "HCPCS basic Guidelines and Modifiers",
           "Introduction on HIPAA rules and guidelines",
-          "HCPCS basic Guidelines and Modifiers concepts",
-          "Introduction to Revenue Cycle Management",
-          "Patient report analysis with sample Medical records",
-          "Final certification exam and Mock Interview",
-          "This course is designed to equip you with comprehensive skills..."
+          "Revenue Cycle Management",
+          "All sections (i.e.) E&M (Evaluation and Management), Surgery, Anesthesia, Radiology, Medical Billing",
+          "The combined basic medical coding and CPC course offers a comprehensive educational experience, blending foundational knowledge with advanced CPC preparation. It prepares participants not only for entry-level coding positions but also for the CPC certification exam, setting them on a path towards a successful career in healthcare coding and billing"
         ]
       },
       {
@@ -228,6 +296,7 @@
           "Chapter wise Assessments every week",
           "Final Certification Exam",
           "Mock Interview to Crack Placements",
+          "Mock Centre for exam practise (This will give the real feel of the AAPC exam)",
           "100% Job Placement Assistance",
           "24/7 Whatsapp Support for Doubt Clarification"
         ]
@@ -240,7 +309,7 @@
         "content": [
           "Life science students",
           "Individuals interested in a career as a medical biller and coder",
-          "Practice consultants unfamiliar with the medical billing and coding process"
+          "Aspiring Medical Coders"
         ]
       },
       {
@@ -251,15 +320,39 @@
         "content": "1.5 months"
       }
     ],
-     "details": [
-    { "label": "Weekdays", "value": "1.5 months / 2hrs per day" },
-    {"label": "Weekends", "value": "2.5 months / 3hrs per day" },
-    {"label":"Learning Mode","value":"Online"},
-    {"label":"Joining Kit","value":"Study Material"},
-    {"label":"Assessments","value":"Chapter Wise Test Every Week"},
-    {"label":"Placement Assistance","value":"100%"},
-    { "label": "Certification", "value": "YES - Provided" },
-    { "label": "Course Fees", "value": "Rs.8000/-"}
-  ]
+    "details": [
+      {
+        "label": "Weekdays",
+        "value": "1.5 months / 2hrs per day"
+      },
+      {
+        "label": "Weekends",
+        "value": "2.5 months / 3hrs per day"
+      },
+      {
+        "label": "Learning Mode",
+        "value": "Online"
+      },
+      {
+        "label": "Joining Kit",
+        "value": "Study Material"
+      },
+      {
+        "label": "Assessments",
+        "value": "Chapter Wise Test Every Week"
+      },
+      {
+        "label": "Placement Assistance",
+        "value": "100%"
+      },
+      {
+        "label": "Certification",
+        "value": "YES - Provided"
+      },
+      {
+        "label": "Course Fees",
+        "value": "Rs.8000/-"
+      }
+    ]
   }
 ]
